@@ -10,23 +10,35 @@ namespace FrameWork.Page
         static Dictionary<int, IPage> Pages;
         static IPage ActivePage;
         BlackBoard blackBoard;
+
         #region Event
         public virtual void Initialize()
         {
             Pages = new Dictionary<int, IPage>();
             blackBoard = new BlackBoard();
         }
-        public virtual void Update()
+        public void Update()
         {
             Debug.Log("ActivePageID : " + ActivePage.ID);
 
             ActivePage?.Update();
         }
-        public virtual void LateUpdate()
+        public void LateUpdate()
         {
             ActivePage?.LateUpdate();
         }
+        public virtual void Terminate()
+        {
+            for (int i = 0; i < Pages.Count; i++)
+            {
+                Pages[i].Terminate();
+            }
+            Pages.Clear();
+            Pages = null;
+        }
         #endregion
+
+        #region Change
         public void TryChangePage(int NextPageID)
         {
             if(!HasKey(NextPageID))
@@ -46,6 +58,8 @@ namespace FrameWork.Page
             ActivePage.Prepare();
             ActivePage.Enter();
         }
+        #endregion
+
         #region ADD REMOVE
         public void TryAddPage(IPage page)
         {
@@ -83,6 +97,7 @@ namespace FrameWork.Page
             Pages.Remove(page.ID);
         }
         #endregion
+
         #region Confirm
         private bool HasPage(IPage page)
         {

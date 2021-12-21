@@ -14,5 +14,6 @@ namespace FrameWork.Page
         void Update();
         void LateUpdate();
         void Exit();
+        void Terminate();
     }
 }
