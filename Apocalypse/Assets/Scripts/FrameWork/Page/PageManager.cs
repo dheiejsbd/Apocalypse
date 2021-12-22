@@ -27,11 +27,12 @@ namespace FrameWork.Page
         {
             ActivePage?.LateUpdate();
         }
+
         public virtual void Terminate()
         {
-            for (int i = 0; i < Pages.Count; i++)
+            foreach (var item in Pages)
             {
-                Pages[i].Terminate();
+                item.Value.Terminate();
             }
             Pages.Clear();
             Pages = null;
@@ -41,11 +42,11 @@ namespace FrameWork.Page
         #region Change
         public void TryChangePage(int NextPageID)
         {
-            if(!HasKey(NextPageID))
+            if (!HasKey(NextPageID))
             {
-                Debug.LogError("Fail ChangePage - Fail PageID : "+ NextPageID);
+                Debug.LogError("Fail ChangePage - Fail PageID : " + NextPageID);
             }
-            if(ActivePage != null)
+            if (ActivePage != null)
             {
                 ActivePage.Exit();
                 ChangePage(NextPageID);
@@ -82,7 +83,7 @@ namespace FrameWork.Page
 
         public void TryRemovePage(IPage page)
         {
-            if(HasPage(page))
+            if (HasPage(page))
             {
                 Debug.Log("Success RemovePage - PageID - " + page.ID);
                 RemovePage(page);
