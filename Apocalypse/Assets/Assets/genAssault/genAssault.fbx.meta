@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: d23b57dc37faf2043ad288eb71dd8c9a
+labels:
+- 3D
+- Arctic
+- Assault
+- BlocBros
+- Character
+- DeltaForce
+- Glock
+- GreenArmyMan
+- HandGrenade
+- Impostor
+- Knife
+- M16
+- Merc
+- Military
+- North
+- PBR
+- Pack
+- Red
+- Shotgun
+- SmokeGrenade
+- Stealth
+- Swat
+- Weapons
+timeCreated: 1477950361
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: back
+    100002: //RootNode
+    100004: genAssault_Head
+    100006: genAssault_Head_End
+    100008: genAssault_Hips
+    100010: genAssault_LeftArm
+    100012: genAssault_LeftFoot
+    100014: genAssault_LeftForeArm
+    100016: genAssault_LeftForeArmRoll
+    100018: genAssault_LeftHand
+    100020: genAssault_LeftHandIndex1
+    100022: genAssault_LeftHandIndex2
+    100024: genAssault_LeftHandIndex3
+    100026: genAssault_LeftHandIndex_End
+    100028: genAssault_LeftHandMiddle1
+    100030: genAssault_LeftHandMiddle2
+    100032: genAssault_LeftHandMiddle3
+    100034: genAssault_LeftHandMiddle_End
+    100036: genAssault_LeftHandPinky1
+    100038: genAssault_LeftHandPinky2
+    100040: genAssault_LeftHandPinky3
+    100042: genAssault_LeftHandPinky_End
+    100044: genAssault_LeftHandRing1
+    100046: genAssault_LeftHandRing2
+    100048: genAssault_LeftHandRing3
+    100050: genAssault_LeftHandRing_End
+    100052: genAssault_LeftHandThumb1
+    100054: genAssault_LeftHandThumb2
+    100056: genAssault_LeftHandThumb3
+    100058: genAssault_LeftHandThumb_End
+    100060: genAssault_LeftLeg
+    100062: genAssault_LeftShoulder
+    100064: genAssault_LeftToeBase
+    100066: genAssault_LeftToes_End
+    100068: genAssault_LeftUpLeg
+    100070: genAssault_LOD0_geo
+    100072: genAssault_LOD1_geo
+    100074: genAssault_LOD2_geo
+    100076: genAssault_LOD3_geo
+    100078: genAssault_Neck
+    100080: genAssault_reference
+    100082: genAssault_RightArm
+    100084: genAssault_RightFoot
+    100086: genAssault_RightForeArm
+    100088: genAssault_RightForeArmRoll
+    100090: genAssault_RightHand
+    100092: genAssault_RightHandIndex1
+    100094: genAssault_RightHandIndex2
+    100096: genAssault_RightHandIndex3
+    100098: genAssault_RightHandIndex_End
+    100100: genAssault_RightHandMiddle1
+    100102: genAssault_RightHandMiddle2
+    100104: genAssault_RightHandMiddle3
+    100106: genAssault_RightHandMiddle_End
+    100108: genAssault_RightHandPinky1
+    100110: genAssault_RightHandPinky2
+    100112: genAssault_RightHandPinky3
+    100114: genAssault_RightHandPinky_End
+    100116: genAssault_RightHandRing1
+    100118: genAssault_RightHandRing2
+    100120: genAssault_RightHandRing3
+    100122: genAssault_RightHandRing_End
+    100124: genAssault_RightHandThumb1
+    100126: genAssault_RightHandThumb2
+    100128: genAssault_RightHandThumb3
+    100130: genAssault_RightHandThumb_End
+    100132: genAssault_RightLeg
+    100134: genAssault_RightShoulder
+    100136: genAssault_RightToeBase
+    100138: genAssault_RightToes_End
+    100140: genAssault_RightUpLeg
+    100142: genAssault_Spine
+    100144: genAssault_Spine1
+    100146: genAssault_Spine2
+    100148: left
+    100150: genAssault_LOD0
+    100152: genAssault_LOD1
+    100154: genAssault_LOD2
+    100156: genAssault_LOD3
+    400000: back
+    400002: //RootNode
+    400004: genAssault_Head
+    400006: genAssault_Head_End
+    400008: genAssault_Hips
+    400010: genAssault_LeftArm
+    400012: genAssault_LeftFoot
+    400014: genAssault_LeftForeArm
+    400016: genAssault_LeftForeArmRoll
+    400018: genAssault_LeftHand
+    400020: genAssault_LeftHandIndex1
+    400022: genAssault_LeftHandIndex2
+    400024: genAssault_LeftHandIndex3
+    400026: genAssault_LeftHandIndex_End
+    400028: genAssault_LeftHandMiddle1
+    400030: genAssault_LeftHandMiddle2
+    400032: genAssault_LeftHandMiddle3
+    400034: genAssault_LeftHandMiddle_End
+    400036: genAssault_LeftHandPinky1
+    400038: genAssault_LeftHandPinky2
+    400040: genAssault_LeftHandPinky3
+    400042: genAssault_LeftHandPinky_End
+    400044: genAssault_LeftHandRing1
+    400046: genAssault_LeftHandRing2
+    400048: genAssault_LeftHandRing3
+    400050: genAssault_LeftHandRing_End
+    400052: genAssault_LeftHandThumb1
+    400054: genAssault_LeftHandThumb2
+    400056: genAssault_LeftHandThumb3
+    400058: genAssault_LeftHandThumb_End
+    400060: genAssault_LeftLeg
+    400062: genAssault_LeftShoulder
+    400064: genAssault_LeftToeBase
+    400066: genAssault_LeftToes_End
+    400068: genAssault_LeftUpLeg
+    400070: genAssault_LOD0_geo
+    400072: genAssault_LOD1_geo
+    400074: genAssault_LOD2_geo
+    400076: genAssault_LOD3_geo
+    400078: genAssault_Neck
+    400080: genAssault_reference
+    400082: genAssault_RightArm
+    400084: genAssault_RightFoot
+    400086: genAssault_RightForeArm
+    400088: genAssault_RightForeArmRoll
+    400090: genAssault_RightHand
+    400092: genAssault_RightHandIndex1
+    400094: genAssault_RightHandIndex2
+    400096: genAssault_RightHandIndex3
+    400098: genAssault_RightHandIndex_End
+    400100: genAssault_RightHandMiddle1
+    400102: genAssault_RightHandMiddle2
+    400104: genAssault_RightHandMiddle3
+    400106: genAssault_RightHandMiddle_End
+    400108: genAssault_RightHandPinky1
+    400110: genAssault_RightHandPinky2
+    400112: genAssault_RightHandPinky3
+    400114: genAssault_RightHandPinky_End
+    400116: genAssault_RightHandRing1
+    400118: genAssault_RightHandRing2
+    400120: genAssault_RightHandRing3
+    400122: genAssault_RightHandRing_End
+    400124: genAssault_RightHandThumb1
+    400126: genAssault_RightHandThumb2
+    400128: genAssault_RightHandThumb3
+    400130: genAssault_RightHandThumb_End
+    400132: genAssault_RightLeg
+    400134: genAssault_RightShoulder
+    400136: genAssault_RightToeBase
+    400138: genAssault_RightToes_End
+    400140: genAssault_RightUpLeg
+    400142: genAssault_Spine
+    400144: genAssault_Spine1
+    400146: genAssault_Spine2
+    400148: left
+    400150: genAssault_LOD0
+    400152: genAssault_LOD1
+    400154: genAssault_LOD2
+    400156: genAssault_LOD3
+    4300000: genAssault_LOD0_geo
+    4300002: genAssault_LOD1_geo
+    4300004: genAssault_LOD2_geo
+    4300006: genAssault_LOD3_geo
+    4300008: genAssault_LOD0
+    4300010: genAssault_LOD1
+    4300012: genAssault_LOD2
+    4300014: genAssault_LOD3
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: genAssault_LOD0_geo
+    13700002: genAssault_LOD1_geo
+    13700004: genAssault_LOD2_geo
+    13700006: genAssault_LOD3_geo
+    13700008: genAssault_LOD0
+    13700010: genAssault_LOD1
+    13700012: genAssault_LOD2
+    13700014: genAssault_LOD3
+    20500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
