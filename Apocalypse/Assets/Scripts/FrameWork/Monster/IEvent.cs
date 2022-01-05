@@ -2,16 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 namespace FrameWork.Monster
 {
-    public interface IAction
+    public interface IEvent
     {
-        int ID { get; }
-        int Priority { get; }
+        void Initialize(IBlackBoard blackBoard);
         void Enter();
-        void Update();
+        int EventChack();
         void Exit();
-        void Terminate();
     }
 }
