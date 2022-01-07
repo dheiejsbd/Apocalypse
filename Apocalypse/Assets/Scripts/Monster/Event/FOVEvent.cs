@@ -8,11 +8,15 @@ namespace Apocalypse
     [CreateAssetMenu(menuName = "ScriptableObject/Monster/Event/FOV", fileName ="FOV", order =int.MaxValue)]
     public class FOVEvent : EventBase
     {
+        [SerializeField] StateID TargetID;
+
+        [Space]
+
         [Range(0,360)]
         public float Angle;
         public float Dist;
         [SerializeField] bool InSide;
-        [SerializeField] StateID TargetID;
+
         [SerializeField] LayerMask TargetLayerMask;
         [SerializeField] LayerMask RaycastLayerMask;
 

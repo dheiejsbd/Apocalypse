@@ -8,8 +8,8 @@ namespace Apocalypse
     [CreateAssetMenu(menuName = "ScriptableObject/Monster/Event/Timer", fileName = "Timer", order = int.MaxValue)]
     public class Timer : EventBase
     {
-        [SerializeField] float EndTime;
         [SerializeField] StateID TargetID;
+        [SerializeField] float EndTime;
 
         float lastTime;
         public override void Initialize(IBlackBoard blackBoard)
