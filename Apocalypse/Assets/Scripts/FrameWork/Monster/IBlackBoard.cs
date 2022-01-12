@@ -9,7 +9,8 @@ namespace FrameWork.Monster
     {
         int HP { get; set; }
         GameObject owner { get; }
-        NavMeshAgent agent { get; }
+        List<int> SoundEventLevel { get; set; }
+        List<Vector3> SoundEventPos { get; set; }
         Transform Target { get; set; }
         Vector3 TargetPos { get ; set; }
     }

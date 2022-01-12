@@ -6,12 +6,10 @@ using FrameWork.Monster;
 
 namespace Apocalypse
 {
-    [RequireComponent(typeof(NavMeshAgent))]
     public partial class MonsterController : MonoBehaviour
     {
         public void Start()
         {
-            agent = GetComponent<NavMeshAgent>();
             StateMachine = new StateMachine();
             StateMachine.Initialize(owner);
             for (int i = 0; i < data.states.Length; i++)
@@ -24,6 +22,7 @@ namespace Apocalypse
         public void Update()
         {
             StateMachine.Update();
+            ResetSound();
         }
 
         public void OnLateUpdate()
