@@ -24,7 +24,6 @@ namespace Apocalypse
             base.Enter();
             blackBoard.owner.GetComponent<MeshRenderer>().material.color = Color.green;
             blackBoard.TargetPos = blackBoard.owner.transform.position;
-            blackBoard.agent.speed = 0;
         }
 
         public override void Exit()
