@@ -9,8 +9,9 @@ namespace FrameWork.Math
     public class FOV
     {
 
-        public static Vector3 GetTargetVector(Vector3 origin, Vector3 direction, LayerMask TargetlayerMask, float viewRange, float viewAngle)
+        public static Vector3 GetTargetVector(Vector3 origin, Vector3 direction, LayerMask TargetlayerMask, float viewRange, float viewAngle, float Offset)
         {
+            origin += Vector3.up * Offset;
             Collider[] Targets = Physics.OverlapSphere(origin, viewRange, TargetlayerMask);
 
             Vector3 Target = Vector3.zero;
@@ -31,8 +32,9 @@ namespace FrameWork.Math
             }
             return Target;
         }
-        public static Vector3 GetTargetVector(Vector3 origin, Vector3 direction, LayerMask TargetlayerMask, float viewRange, float viewAngle, LayerMask RaycastMask)
+        public static Vector3 GetTargetVector(Vector3 origin, Vector3 direction, LayerMask TargetlayerMask, float viewRange, float viewAngle, float Offset, LayerMask RaycastMask)
         {
+            origin += Vector3.up* Offset;
             Collider[] Targets = Physics.OverlapSphere(origin, viewRange, TargetlayerMask);
 
             Vector3 Target = Vector3.zero;
@@ -58,8 +60,9 @@ namespace FrameWork.Math
             }
             return Target;
         }
-        public static Transform GetTarget(Vector3 origin, Vector3 direction, LayerMask TargetlayerMask, float viewRange, float viewAngle, LayerMask RaycastMask)
+        public static Transform GetTarget(Vector3 origin, Vector3 direction, LayerMask TargetlayerMask, float viewRange, float viewAngle, float Offset, LayerMask RaycastMask)
         {
+            origin += Vector3.up * Offset;
             Collider[] Targets = Physics.OverlapSphere(origin, viewRange, TargetlayerMask);
 
             Transform Target = null;

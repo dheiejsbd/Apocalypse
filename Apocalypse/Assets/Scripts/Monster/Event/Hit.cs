@@ -1,15 +1,15 @@
-﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using FrameWork.Monster;
 using UnityEngine;
-using UnityEditor;
+using FrameWork.Monster;
+
 namespace Apocalypse
 {
-    [CreateAssetMenu(menuName = "ScriptableObject/Monster/Event/FOV", fileName ="FOV", order =int.MaxValue)]
-    public class FOVEvent : EventBase
+    [CreateAssetMenu(menuName = "ScriptableObject/Monster/Event/Hit", fileName = "Hit", order = int.MaxValue)]
+    public class Hit : EventBase
     {
         [SerializeField] StateID TargetID;
-        [SerializeField] bool InSide;
+        [SerializeField] EventBase eventBase;
         public override void Initialize(IBlackBoard blackBoard)
         {
             base.Initialize(blackBoard);
@@ -17,17 +17,17 @@ namespace Apocalypse
 
         public override int EventChack()
         {
-            if (blackBoard.FOV == null) return InSide ? -1 : (int)TargetID;
-            return InSide ? (int) TargetID : -1;
+            return eventBase.EventChack() == -1 ? (int)TargetID : -1;
         }
 
         public override void Enter()
         {
-
+            eventBase.Enter();
         }
 
         public override void Exit()
         {
+            eventBase.Exit();
         }
     }
 }

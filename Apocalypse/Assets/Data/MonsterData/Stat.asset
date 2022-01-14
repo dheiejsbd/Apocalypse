@@ -16,6 +16,15 @@ MonoBehaviour:
   MoveSpeed: 0
   RotateSpeed: 0
   AttackDamage: 0
+  Angle: 90
+  Dist: 69.63
+  Offset: 1
+  TargetLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  RaycastLayerMask:
+    serializedVersion: 2
+    m_Bits: 65
   states:
   - {fileID: 11400000, guid: 972a8c4ff2111f84a8cc5b1dd7f90dc2, type: 2}
   - {fileID: 11400000, guid: bad8087b70ee2974faa683300e43580f, type: 2}

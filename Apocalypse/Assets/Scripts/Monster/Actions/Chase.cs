@@ -26,11 +26,13 @@ namespace Apocalypse
             blackBoard.owner.GetComponent<MeshRenderer>().material.color = Color.red;
         }
 
-        public override void Update()
+        public override bool Update()
         {
-            base.Update();
-            blackBoard.Target = FrameWork.Math.FOV.GetTarget(blackBoard.owner.transform.position, blackBoard.owner.transform.forward, TargetLayerMask, Dist, Angle, RaycastLayerMask);
-            if(blackBoard.Target) blackBoard.TargetPos = blackBoard.Target.position;
+            if (base.Update()) return true;
+            Transform Target = blackBoard.FOV;
+            if(Target != null) blackBoard.Target = Target;
+            if(blackBoard.Target != null) blackBoard.TargetPos = blackBoard.Target.position;
+            return false;
         }
         public override void Exit()
         {

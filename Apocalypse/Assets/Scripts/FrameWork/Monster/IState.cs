@@ -11,7 +11,7 @@ namespace FrameWork.Monster
         bool CanChange { get; set; }
         void Initialize(GameObject owner);
         void Enter();
-        void Update();
+        bool Update();
         void Exit();
         void Terminate();
     }

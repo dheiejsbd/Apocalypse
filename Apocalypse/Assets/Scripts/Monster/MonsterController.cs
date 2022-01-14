@@ -12,6 +12,8 @@ namespace Apocalypse
         {
             StateMachine = new StateMachine();
             StateMachine.Initialize(owner);
+            ai = GetComponent<Pathfinding.AIPath>();
+            ai.target = new GameObject(gameObject.name + " Target").transform;
             for (int i = 0; i < data.states.Length; i++)
             {
                 data.states[i].Initialize(owner);
@@ -31,7 +33,7 @@ namespace Apocalypse
         }
         public void Terminate()
         {
-
+            Destroy(ai.target.gameObject);
         }
     }
 }

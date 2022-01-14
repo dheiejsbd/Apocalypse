@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d7a459516e1c24fa549b0ef306e822, type: 3}
   m_Name: Timer to Idle
   m_EditorClassIdentifier: 
-  EndTime: 5
   TargetID: 0
+  EndTime: 256.37

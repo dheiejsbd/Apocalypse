@@ -30,7 +30,7 @@ namespace Apocalypse
                 Events[i].Enter();
             }
         }
-        public virtual void Update()
+        public virtual bool Update()
         {
             int Target = 0;
             for (int i = 0; i < Events.Length; i++)
@@ -39,9 +39,10 @@ namespace Apocalypse
                 if (Target != -1)
                 {
                     behaviourHandler.DoChangeState(Target);
-                    break;
+                    return true;
                 }
             }
+            return false;
         }
         public abstract void Exit();
         public abstract void Terminate();

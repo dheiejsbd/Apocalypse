@@ -10,15 +10,24 @@ namespace Apocalypse
     public partial class MonsterController : IBlackBoard
     {
         public int HP { get ; set ; }
-        public GameObject owner { get => gameObject; }
+        public bool Hit { get; set; }
+        public GameObject owner => gameObject;
         public Transform Target { get ; set ; }
         public Vector3 TargetPos { get { return ai.target.position; } set { ai.target.position = value; } }
 
         public List<int> SoundEventLevel { get; set; }
         public List<Vector3> SoundEventPos { get; set; }
 
-        AIPath ai;
+        public Transform FOV => FrameWork.Math.FOV.GetTarget(transform.position, transform.forward, data.TargetLayerMask, data.Dist, data.Angle,data.Offset, data.RaycastLayerMask);
 
+        public AIPath ai { get; set; }
+
+
+        public void ResetEvent()
+        {
+            ResetSound();
+            ResetHit();
+        }
         public void GetSound(SoundEvent sound)
         {
             if(SoundEventLevel == null)
@@ -33,6 +42,11 @@ namespace Apocalypse
         {
             SoundEventLevel = null;
             SoundEventPos = null;
+        }
+
+        private void ResetHit()
+        {
+            Hit = false;
         }
     }
 }

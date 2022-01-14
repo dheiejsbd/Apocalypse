@@ -3,6 +3,7 @@ using UnityEngine;
 using FrameWork.Monster;
 namespace Apocalypse
 {
+    [CreateAssetMenu(menuName = "ScriptableObject/Monster/Event/SoundListner", fileName ="SoundListner", order =int.MaxValue)]
     public class SoundListner : EventBase
     {
         [SerializeField] StateID TargetID;

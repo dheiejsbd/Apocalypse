@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using Apocalypse;
-[CustomEditor(typeof(FOVEvent))]
-public class FOVEditor : Editor
+[CustomEditor(typeof(MonsterData))]
+public class MonsterDataEditor : Editor
 {
-    FOVEvent FOV;
+    MonsterData FOV;
     Material mat;
     void OnEnable()
     {
-        FOV = target as FOVEvent;
+        FOV = target as MonsterData;
         var shader = Shader.Find("Hidden/Internal-Colored");
         mat = new Material(shader);
     }

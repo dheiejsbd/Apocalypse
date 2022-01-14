@@ -12,13 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ddd684f7702afa4289bbd4088ec967c, type: 3}
   m_Name: FOV out
   m_EditorClassIdentifier: 
-  Angle: 120
-  Dist: 50
-  InSide: 0
   TargetID: 0
-  TargetLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  RaycastLayerMask:
-    serializedVersion: 2
-    m_Bits: 129
+  InSide: 0

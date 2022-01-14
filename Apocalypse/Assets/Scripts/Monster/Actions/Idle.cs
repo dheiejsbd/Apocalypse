@@ -23,6 +23,7 @@ namespace Apocalypse
         {
             base.Enter();
             blackBoard.owner.GetComponent<MeshRenderer>().material.color = Color.green;
+            Debug.Log("Idle");
             blackBoard.TargetPos = blackBoard.owner.transform.position;
         }
 
@@ -34,9 +35,10 @@ namespace Apocalypse
         {
         }
 
-        public override void Update()
+        public override bool Update()
         {
-            base.Update();
+            if (base.Update()) return true;
+            return false;
         }
     }
 }
