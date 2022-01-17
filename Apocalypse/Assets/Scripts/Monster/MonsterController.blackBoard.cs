@@ -40,8 +40,8 @@ namespace Apocalypse
         }
         private void ResetSound()
         {
-            SoundEventLevel = null;
-            SoundEventPos = null;
+            SoundEventLevel = new List<int>();
+            SoundEventPos = new List<Vector3>();
         }
 
         private void ResetHit()

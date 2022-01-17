@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace Apocalypse
 {
+    [System.Serializable]
     public struct SoundEvent
     {
         public int Level;

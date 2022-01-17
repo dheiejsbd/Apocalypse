@@ -14,6 +14,8 @@ namespace Apocalypse
             StateMachine.Initialize(owner);
             ai = GetComponent<Pathfinding.AIPath>();
             ai.target = new GameObject(gameObject.name + " Target").transform;
+            SoundEventLevel = new List<int>();
+            SoundEventPos = new List<Vector3>();
             for (int i = 0; i < data.states.Length; i++)
             {
                 data.states[i].Initialize(owner);
