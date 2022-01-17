@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5968ab6819c2d9b4e82ddc3564589252, type: 3}
   m_Name: SoundListner
   m_EditorClassIdentifier: 
-  TargetID: 0
+  TargetID: 3
   SoundLevel: 0
