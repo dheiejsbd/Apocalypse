@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d406cdbfbc380294e8e651a6ea07db43, type: 3}
   m_Name: MoveToSound
   m_EditorClassIdentifier: 
-  events: []
+  events:
+  - {fileID: 11400000, guid: 79920f3868db6aa4d93fff49eea59586, type: 2}
   SoundLevel: 0

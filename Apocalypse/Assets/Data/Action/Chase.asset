@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Chase
   m_EditorClassIdentifier: 
   events:
+  - {fileID: 11400000, guid: c711ea6ebc1a8c34aab2066ea990c712, type: 2}
   - {fileID: 11400000, guid: 41a24c92336f14c49be7609a1a72c5f0, type: 2}
   Angle: 120
   Dist: 50

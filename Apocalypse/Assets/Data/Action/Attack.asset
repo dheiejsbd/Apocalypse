@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8eee8a556f4f847944b3cae55a00cd, type: 3}
   m_Name: Attack
   m_EditorClassIdentifier: 
-  events: []
+  events:
+  - {fileID: 11400000, guid: 5c7b629360b020648b2bed2a90519c12, type: 2}

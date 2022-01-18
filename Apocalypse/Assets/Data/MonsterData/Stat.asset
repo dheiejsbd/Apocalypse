@@ -17,7 +17,7 @@ MonoBehaviour:
   RotateSpeed: 0
   AttackDamage: 0
   Angle: 90
-  Dist: 69.63
+  Dist: 20
   Offset: 1
   TargetLayerMask:
     serializedVersion: 2
@@ -30,3 +30,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bad8087b70ee2974faa683300e43580f, type: 2}
   - {fileID: 11400000, guid: 8c73c79e995053345b09cedbedfef1c5, type: 2}
   - {fileID: 11400000, guid: 358cc9574d50ad1448fdcd2dc553a505, type: 2}
+  - {fileID: 11400000, guid: 1c46ef54955d8e84fb0b2242192e3992, type: 2}

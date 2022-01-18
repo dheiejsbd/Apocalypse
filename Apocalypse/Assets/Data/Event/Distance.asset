@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90afdeb2a531f424fb3ec039cb6bc2d9, type: 3}
   m_Name: Distance
   m_EditorClassIdentifier: 
-  TargetID: 0
+  TargetID: 2
   Dist: 0.2
+  In: 1
