@@ -18,18 +18,7 @@ namespace Apocalypse
         public override void Enter()
         {
             base.Enter();
-            float dist = float.MaxValue;
-            for (int i = 0; i < blackBoard.SoundEventLevel.Count; i++)
-            {
-                if(blackBoard.SoundEventLevel[i] >= SoundLevel)
-                {
-                    if(Vector3.Distance(blackBoard.SoundEventPos[i], blackBoard.owner.transform.position) < dist)
-                    {
-                        dist = Vector3.Distance(blackBoard.SoundEventPos[i], blackBoard.owner.transform.position);
-                        blackBoard.TargetPos = blackBoard.SoundEventPos[i];
-                    }
-                }
-            }
+            blackBoard.TargetPos = blackBoard.SoundEvent.Pos;
             blackBoard.owner.GetComponent<MeshRenderer>().material.color = Color.gray;
         }
 

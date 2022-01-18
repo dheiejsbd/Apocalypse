@@ -13,14 +13,15 @@ namespace Apocalypse
         public bool Hit { get; set; }
         public GameObject owner => gameObject;
         public Transform Target { get ; set ; }
-        public Vector3 TargetPos { get { return ai.target.position; } set { ai.target.position = value; } }
+        public Vector3 TargetPos { get { return AIPath.target.position; } set { AIPath.target.position = value; } }
 
-        public List<int> SoundEventLevel { get; set; }
-        public List<Vector3> SoundEventPos { get; set; }
+        public List<SoundEvent> SoundEvents { get; set; }
+        public SoundEvent SoundEvent { get; set; }
 
         public Transform FOV => FrameWork.Math.FOV.GetTarget(transform.position, transform.forward, data.TargetLayerMask, data.Dist, data.Angle,data.Offset, data.RaycastLayerMask);
 
-        public AIPath ai { get; set; }
+        public Seeker Seeker { get; set; }
+        public AIPath AIPath { get; set; }
 
 
         public void ResetEvent()
@@ -30,18 +31,11 @@ namespace Apocalypse
         }
         public void GetSound(SoundEvent sound)
         {
-            if(SoundEventLevel == null)
-            {
-                SoundEventLevel = new List<int>();
-                SoundEventPos = new List<Vector3>();
-            }
-            SoundEventLevel.Add(sound.Level);
-            SoundEventPos.Add(sound.Pos);
+            SoundEvents.Add(sound);
         }
         private void ResetSound()
         {
-            SoundEventLevel = new List<int>();
-            SoundEventPos = new List<Vector3>();
+            SoundEvents = new List<Apocalypse.SoundEvent>();
         }
 
         private void ResetHit()

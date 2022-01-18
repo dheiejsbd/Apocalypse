@@ -9,6 +9,8 @@ namespace Apocalypse
     public class Distance : EventBase
     {
         [SerializeField] StateID TargetID;
+        [SerializeField] float Dist = 0.2f;
+        [SerializeField] bool In;
         public override void Initialize(IBlackBoard blackBoard)
         {
             base.Initialize(blackBoard);
@@ -16,7 +18,8 @@ namespace Apocalypse
 
         public override int EventChack()
         {
-            return -1;
+            if (blackBoard.Seeker.GetCurrentPath().GetTotalLength() < Dist && !blackBoard.AIPath.pathPending) return In ? (int)TargetID : -1;
+            return In ? -1 : (int)TargetID;
         }
 
         public override void Enter()

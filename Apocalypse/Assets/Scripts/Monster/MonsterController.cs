@@ -12,10 +12,10 @@ namespace Apocalypse
         {
             StateMachine = new StateMachine();
             StateMachine.Initialize(owner);
-            ai = GetComponent<Pathfinding.AIPath>();
-            ai.target = new GameObject(gameObject.name + " Target").transform;
-            SoundEventLevel = new List<int>();
-            SoundEventPos = new List<Vector3>();
+            Seeker = GetComponent<Pathfinding.Seeker>();
+            AIPath = GetComponent<Pathfinding.AIPath>();
+            AIPath.target = new GameObject(gameObject.name + " Target").transform;
+            SoundEvents = new List<SoundEvent>();
             for (int i = 0; i < data.states.Length; i++)
             {
                 data.states[i].Initialize(owner);
@@ -35,7 +35,7 @@ namespace Apocalypse
         }
         public void Terminate()
         {
-            Destroy(ai.target.gameObject);
+            Destroy(AIPath.target.gameObject);
         }
     }
 }

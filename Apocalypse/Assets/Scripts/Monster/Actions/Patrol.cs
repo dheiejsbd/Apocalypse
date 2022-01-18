@@ -37,12 +37,12 @@ namespace Apocalypse
         {
             if(base.Update()) return true;
 
-            if(blackBoard.ai.remainingDistance < 0.2f && !blackBoard.ai.pathPending)
+            if(blackBoard.Seeker.GetCurrentPath().GetTotalLength() < 2f && !blackBoard.AIPath.pathPending)
             {
                 PathID++;
                 PathID %= Path.childCount;
                 blackBoard.TargetPos = Path.GetChild(PathID).position;
-                blackBoard.ai.SearchPath();
+                blackBoard.AIPath.SearchPath();
             }
 
 

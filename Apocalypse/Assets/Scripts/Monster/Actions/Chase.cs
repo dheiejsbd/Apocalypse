@@ -23,7 +23,7 @@ namespace Apocalypse
         public override void Enter()
         {
             base.Enter();
-            blackBoard.owner.GetComponent<MeshRenderer>().material.color = Color.red;
+            blackBoard.owner.GetComponent<MeshRenderer>().material.color = Color.blue;
         }
 
         public override bool Update()
