@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 using FrameWork.Monster;
 
 namespace Apocalypse
 {
+    [RequireComponent(typeof(Pathfinding.AIPath))]
+    [RequireComponent(typeof(Rigidbody))]
+    [RequireComponent(typeof(CapsuleCollider))]
     public partial class MonsterController : MonoBehaviour
     {
         public void Start()

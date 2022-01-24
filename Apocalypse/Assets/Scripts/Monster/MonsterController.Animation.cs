@@ -7,6 +7,9 @@ namespace Apocalypse
 {
     public partial class MonsterController
     {
-        
+        public void SetMoveSpeed(float speed)
+        {
+
+        }
     }
 }
