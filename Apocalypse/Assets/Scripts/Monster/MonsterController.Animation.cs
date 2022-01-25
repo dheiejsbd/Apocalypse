@@ -9,7 +9,12 @@ namespace Apocalypse
     {
         public void SetMoveSpeed(float speed)
         {
+            animator.SetFloat("MoveSpeed", speed);
+        }
 
+        public void TryPlayAnim(string name)
+        {
+            animator.Play(name);
         }
     }
 }

@@ -1,149 +1,425 @@
 fileFormatVersion: 2
 guid: 67ee41d48c036754c8862172c1e8ec1c
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: CATRigHub001
-    100002: CATRigHub002
-    100004: CATRigHub003
-    100006: CATRigHub003Bone001
-    100008: CATRigHub003Bone002
-    100010: CATRigLArm1
-    100012: CATRigLArm2
-    100014: CATRigLArmCollarbone
-    100016: CATRigLArmDigit11
-    100018: CATRigLArmDigit12
-    100020: CATRigLArmDigit13
-    100022: CATRigLArmDigit21
-    100024: CATRigLArmDigit22
-    100026: CATRigLArmDigit23
-    100028: CATRigLArmDigit31
-    100030: CATRigLArmDigit32
-    100032: CATRigLArmDigit33
-    100034: CATRigLArmDigit41
-    100036: CATRigLArmDigit42
-    100038: CATRigLArmDigit43
-    100040: CATRigLArmDigit51
-    100042: CATRigLArmDigit52
-    100044: CATRigLArmDigit53
-    100046: CATRigLArmPalm
-    100048: CATRigLLeg1
-    100050: CATRigLLeg2
-    100052: CATRigLLegAnkle
-    100054: CATRigLLegDigit11
-    100056: CATRigLLegPlatform
-    100058: CATRigRArm1
-    100060: CATRigRArm2
-    100062: CATRigRArmCollarbone
-    100064: CATRigRArmDigit11
-    100066: CATRigRArmDigit12
-    100068: CATRigRArmDigit13
-    100070: CATRigRArmDigit21
-    100072: CATRigRArmDigit22
-    100074: CATRigRArmDigit23
-    100076: CATRigRArmDigit31
-    100078: CATRigRArmDigit32
-    100080: CATRigRArmDigit33
-    100082: CATRigRArmDigit41
-    100084: CATRigRArmDigit42
-    100086: CATRigRArmDigit43
-    100088: CATRigRArmDigit51
-    100090: CATRigRArmDigit52
-    100092: CATRigRArmDigit53
-    100094: CATRigRArmPalm
-    100096: CATRigRLeg1
-    100098: CATRigRLeg2
-    100100: CATRigRLegAnkle
-    100102: CATRigRLegDigit11
-    100104: CATRigRLegPlatform
-    100106: CATRigSpine
-    100108: CATRigSpine1
-    100110: CATRigSpine2
-    100112: Character001
-    100114: //RootNode
-    100116: Object003
-    100118: z7 lower body
-    100120: z7 skin
-    100122: z7upper body
-    400000: CATRigHub001
-    400002: CATRigHub002
-    400004: CATRigHub003
-    400006: CATRigHub003Bone001
-    400008: CATRigHub003Bone002
-    400010: CATRigLArm1
-    400012: CATRigLArm2
-    400014: CATRigLArmCollarbone
-    400016: CATRigLArmDigit11
-    400018: CATRigLArmDigit12
-    400020: CATRigLArmDigit13
-    400022: CATRigLArmDigit21
-    400024: CATRigLArmDigit22
-    400026: CATRigLArmDigit23
-    400028: CATRigLArmDigit31
-    400030: CATRigLArmDigit32
-    400032: CATRigLArmDigit33
-    400034: CATRigLArmDigit41
-    400036: CATRigLArmDigit42
-    400038: CATRigLArmDigit43
-    400040: CATRigLArmDigit51
-    400042: CATRigLArmDigit52
-    400044: CATRigLArmDigit53
-    400046: CATRigLArmPalm
-    400048: CATRigLLeg1
-    400050: CATRigLLeg2
-    400052: CATRigLLegAnkle
-    400054: CATRigLLegDigit11
-    400056: CATRigLLegPlatform
-    400058: CATRigRArm1
-    400060: CATRigRArm2
-    400062: CATRigRArmCollarbone
-    400064: CATRigRArmDigit11
-    400066: CATRigRArmDigit12
-    400068: CATRigRArmDigit13
-    400070: CATRigRArmDigit21
-    400072: CATRigRArmDigit22
-    400074: CATRigRArmDigit23
-    400076: CATRigRArmDigit31
-    400078: CATRigRArmDigit32
-    400080: CATRigRArmDigit33
-    400082: CATRigRArmDigit41
-    400084: CATRigRArmDigit42
-    400086: CATRigRArmDigit43
-    400088: CATRigRArmDigit51
-    400090: CATRigRArmDigit52
-    400092: CATRigRArmDigit53
-    400094: CATRigRArmPalm
-    400096: CATRigRLeg1
-    400098: CATRigRLeg2
-    400100: CATRigRLegAnkle
-    400102: CATRigRLegDigit11
-    400104: CATRigRLegPlatform
-    400106: CATRigSpine
-    400108: CATRigSpine1
-    400110: CATRigSpine2
-    400112: Character001
-    400114: //RootNode
-    400116: Object003
-    400118: z7 lower body
-    400120: z7 skin
-    400122: z7upper body
-    2100000: Axe  weapon_
-    2100002: z7 skin
-    2100004: z2 cloth
-    2300000: Object003
-    3300000: Object003
-    4300000: Object003
-    4300002: z7 skin
-    4300004: z7 lower body
-    4300006: z7upper body
-    7400000: ZombieBrute_OneHanded_Damage
-    9500000: //RootNode
-    13700000: z7 lower body
-    13700002: z7 skin
-    13700004: z7upper body
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: CATRigHub001
+  - first:
+      1: 100002
+    second: CATRigHub002
+  - first:
+      1: 100004
+    second: CATRigHub003
+  - first:
+      1: 100006
+    second: CATRigHub003Bone001
+  - first:
+      1: 100008
+    second: CATRigHub003Bone002
+  - first:
+      1: 100010
+    second: CATRigLArm1
+  - first:
+      1: 100012
+    second: CATRigLArm2
+  - first:
+      1: 100014
+    second: CATRigLArmCollarbone
+  - first:
+      1: 100016
+    second: CATRigLArmDigit11
+  - first:
+      1: 100018
+    second: CATRigLArmDigit12
+  - first:
+      1: 100020
+    second: CATRigLArmDigit13
+  - first:
+      1: 100022
+    second: CATRigLArmDigit21
+  - first:
+      1: 100024
+    second: CATRigLArmDigit22
+  - first:
+      1: 100026
+    second: CATRigLArmDigit23
+  - first:
+      1: 100028
+    second: CATRigLArmDigit31
+  - first:
+      1: 100030
+    second: CATRigLArmDigit32
+  - first:
+      1: 100032
+    second: CATRigLArmDigit33
+  - first:
+      1: 100034
+    second: CATRigLArmDigit41
+  - first:
+      1: 100036
+    second: CATRigLArmDigit42
+  - first:
+      1: 100038
+    second: CATRigLArmDigit43
+  - first:
+      1: 100040
+    second: CATRigLArmDigit51
+  - first:
+      1: 100042
+    second: CATRigLArmDigit52
+  - first:
+      1: 100044
+    second: CATRigLArmDigit53
+  - first:
+      1: 100046
+    second: CATRigLArmPalm
+  - first:
+      1: 100048
+    second: CATRigLLeg1
+  - first:
+      1: 100050
+    second: CATRigLLeg2
+  - first:
+      1: 100052
+    second: CATRigLLegAnkle
+  - first:
+      1: 100054
+    second: CATRigLLegDigit11
+  - first:
+      1: 100056
+    second: CATRigLLegPlatform
+  - first:
+      1: 100058
+    second: CATRigRArm1
+  - first:
+      1: 100060
+    second: CATRigRArm2
+  - first:
+      1: 100062
+    second: CATRigRArmCollarbone
+  - first:
+      1: 100064
+    second: CATRigRArmDigit11
+  - first:
+      1: 100066
+    second: CATRigRArmDigit12
+  - first:
+      1: 100068
+    second: CATRigRArmDigit13
+  - first:
+      1: 100070
+    second: CATRigRArmDigit21
+  - first:
+      1: 100072
+    second: CATRigRArmDigit22
+  - first:
+      1: 100074
+    second: CATRigRArmDigit23
+  - first:
+      1: 100076
+    second: CATRigRArmDigit31
+  - first:
+      1: 100078
+    second: CATRigRArmDigit32
+  - first:
+      1: 100080
+    second: CATRigRArmDigit33
+  - first:
+      1: 100082
+    second: CATRigRArmDigit41
+  - first:
+      1: 100084
+    second: CATRigRArmDigit42
+  - first:
+      1: 100086
+    second: CATRigRArmDigit43
+  - first:
+      1: 100088
+    second: CATRigRArmDigit51
+  - first:
+      1: 100090
+    second: CATRigRArmDigit52
+  - first:
+      1: 100092
+    second: CATRigRArmDigit53
+  - first:
+      1: 100094
+    second: CATRigRArmPalm
+  - first:
+      1: 100096
+    second: CATRigRLeg1
+  - first:
+      1: 100098
+    second: CATRigRLeg2
+  - first:
+      1: 100100
+    second: CATRigRLegAnkle
+  - first:
+      1: 100102
+    second: CATRigRLegDigit11
+  - first:
+      1: 100104
+    second: CATRigRLegPlatform
+  - first:
+      1: 100106
+    second: CATRigSpine
+  - first:
+      1: 100108
+    second: CATRigSpine1
+  - first:
+      1: 100110
+    second: CATRigSpine2
+  - first:
+      1: 100112
+    second: Character001
+  - first:
+      1: 100114
+    second: //RootNode
+  - first:
+      1: 100116
+    second: Object003
+  - first:
+      1: 100118
+    second: z7 lower body
+  - first:
+      1: 100120
+    second: z7 skin
+  - first:
+      1: 100122
+    second: z7upper body
+  - first:
+      4: 400000
+    second: CATRigHub001
+  - first:
+      4: 400002
+    second: CATRigHub002
+  - first:
+      4: 400004
+    second: CATRigHub003
+  - first:
+      4: 400006
+    second: CATRigHub003Bone001
+  - first:
+      4: 400008
+    second: CATRigHub003Bone002
+  - first:
+      4: 400010
+    second: CATRigLArm1
+  - first:
+      4: 400012
+    second: CATRigLArm2
+  - first:
+      4: 400014
+    second: CATRigLArmCollarbone
+  - first:
+      4: 400016
+    second: CATRigLArmDigit11
+  - first:
+      4: 400018
+    second: CATRigLArmDigit12
+  - first:
+      4: 400020
+    second: CATRigLArmDigit13
+  - first:
+      4: 400022
+    second: CATRigLArmDigit21
+  - first:
+      4: 400024
+    second: CATRigLArmDigit22
+  - first:
+      4: 400026
+    second: CATRigLArmDigit23
+  - first:
+      4: 400028
+    second: CATRigLArmDigit31
+  - first:
+      4: 400030
+    second: CATRigLArmDigit32
+  - first:
+      4: 400032
+    second: CATRigLArmDigit33
+  - first:
+      4: 400034
+    second: CATRigLArmDigit41
+  - first:
+      4: 400036
+    second: CATRigLArmDigit42
+  - first:
+      4: 400038
+    second: CATRigLArmDigit43
+  - first:
+      4: 400040
+    second: CATRigLArmDigit51
+  - first:
+      4: 400042
+    second: CATRigLArmDigit52
+  - first:
+      4: 400044
+    second: CATRigLArmDigit53
+  - first:
+      4: 400046
+    second: CATRigLArmPalm
+  - first:
+      4: 400048
+    second: CATRigLLeg1
+  - first:
+      4: 400050
+    second: CATRigLLeg2
+  - first:
+      4: 400052
+    second: CATRigLLegAnkle
+  - first:
+      4: 400054
+    second: CATRigLLegDigit11
+  - first:
+      4: 400056
+    second: CATRigLLegPlatform
+  - first:
+      4: 400058
+    second: CATRigRArm1
+  - first:
+      4: 400060
+    second: CATRigRArm2
+  - first:
+      4: 400062
+    second: CATRigRArmCollarbone
+  - first:
+      4: 400064
+    second: CATRigRArmDigit11
+  - first:
+      4: 400066
+    second: CATRigRArmDigit12
+  - first:
+      4: 400068
+    second: CATRigRArmDigit13
+  - first:
+      4: 400070
+    second: CATRigRArmDigit21
+  - first:
+      4: 400072
+    second: CATRigRArmDigit22
+  - first:
+      4: 400074
+    second: CATRigRArmDigit23
+  - first:
+      4: 400076
+    second: CATRigRArmDigit31
+  - first:
+      4: 400078
+    second: CATRigRArmDigit32
+  - first:
+      4: 400080
+    second: CATRigRArmDigit33
+  - first:
+      4: 400082
+    second: CATRigRArmDigit41
+  - first:
+      4: 400084
+    second: CATRigRArmDigit42
+  - first:
+      4: 400086
+    second: CATRigRArmDigit43
+  - first:
+      4: 400088
+    second: CATRigRArmDigit51
+  - first:
+      4: 400090
+    second: CATRigRArmDigit52
+  - first:
+      4: 400092
+    second: CATRigRArmDigit53
+  - first:
+      4: 400094
+    second: CATRigRArmPalm
+  - first:
+      4: 400096
+    second: CATRigRLeg1
+  - first:
+      4: 400098
+    second: CATRigRLeg2
+  - first:
+      4: 400100
+    second: CATRigRLegAnkle
+  - first:
+      4: 400102
+    second: CATRigRLegDigit11
+  - first:
+      4: 400104
+    second: CATRigRLegPlatform
+  - first:
+      4: 400106
+    second: CATRigSpine
+  - first:
+      4: 400108
+    second: CATRigSpine1
+  - first:
+      4: 400110
+    second: CATRigSpine2
+  - first:
+      4: 400112
+    second: Character001
+  - first:
+      4: 400114
+    second: //RootNode
+  - first:
+      4: 400116
+    second: Object003
+  - first:
+      4: 400118
+    second: z7 lower body
+  - first:
+      4: 400120
+    second: z7 skin
+  - first:
+      4: 400122
+    second: z7upper body
+  - first:
+      21: 2100000
+    second: Axe  weapon_
+  - first:
+      21: 2100002
+    second: z7 skin
+  - first:
+      21: 2100004
+    second: z2 cloth
+  - first:
+      23: 2300000
+    second: Object003
+  - first:
+      33: 3300000
+    second: Object003
+  - first:
+      43: 4300000
+    second: Object003
+  - first:
+      43: 4300002
+    second: z7 skin
+  - first:
+      43: 4300004
+    second: z7 lower body
+  - first:
+      43: 4300006
+    second: z7upper body
+  - first:
+      74: 7400000
+    second: ZombieBrute_OneHanded_Damage
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: z7 lower body
+  - first:
+      137: 13700002
+    second: z7 skin
+  - first:
+      137: 13700004
+    second: z7upper body
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -160,6 +436,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -171,6 +448,7 @@ ModelImporter:
     - serializedVersion: 16
       name: ZombieBrute_OneHanded_Damage
       takeName: Take 001
+      internalID: 0
       firstFrame: 0
       lastFrame: 100
       wrapMode: 0
@@ -181,9 +459,9 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
-      loopBlendOrientation: 1
+      loopBlendOrientation: 0
       loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
+      loopBlendPositionXZ: 0
       keepOriginalOrientation: 1
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
@@ -202,21 +480,31 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -224,10 +512,13 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 1
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human:
     - boneName: CATRigHub001
       humanName: Hips
@@ -1022,15 +1313,18 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: aee0f02c3a13fd34aaee2a3203eb60ab,
     type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
