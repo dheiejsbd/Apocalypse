@@ -11,10 +11,5 @@ namespace Apocalypse
         {
             animator.SetFloat("MoveSpeed", speed);
         }
-
-        public void TryPlayAnim(string name)
-        {
-            animator.Play(name);
-        }
     }
 }

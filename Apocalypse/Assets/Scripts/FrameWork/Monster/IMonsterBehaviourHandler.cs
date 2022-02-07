@@ -9,5 +9,6 @@ namespace FrameWork.Monster
     public interface IMonsterBehaviourHandler
     {
         void DoChangeState(int ID);
+        void DoChangeAnim(string name);
     }
 }

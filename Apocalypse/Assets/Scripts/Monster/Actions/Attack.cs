@@ -20,6 +20,7 @@ namespace Apocalypse
             base.Enter();
             blackBoard.owner.GetComponent<MeshRenderer>().material.color = Color.red;
             blackBoard.AIPath.canMove = false;
+            behaviourHandler.DoChangeAnim("Attack");
         }
 
         public override void Exit()

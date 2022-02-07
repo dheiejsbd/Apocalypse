@@ -16,6 +16,7 @@ namespace Apocalypse
             StateMachine.Initialize(owner);
             Seeker = GetComponent<Pathfinding.Seeker>();
             AIPath = GetComponent<Pathfinding.AIPath>();
+            animator = GetComponent<Animator>();
             AIPath.target = new GameObject(gameObject.name + " Target").transform;
             SoundEvents = new List<SoundEvent>();
             for (int i = 0; i < data.states.Length; i++)
