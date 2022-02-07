@@ -28,6 +28,8 @@ namespace Apocalypse
 
         public void Update()
         {
+            StateMachine.Update();
+            ResetSound();
             UpdateTarget();
         }
 
