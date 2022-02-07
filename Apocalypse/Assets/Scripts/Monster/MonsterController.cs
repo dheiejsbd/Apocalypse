@@ -28,8 +28,25 @@ namespace Apocalypse
 
         public void Update()
         {
-            StateMachine.Update();
-            ResetSound();
+            UpdateTarget();
+        }
+
+        void UpdateTarget()
+        {
+            if (TargetLost)
+            {
+                Target = FOV;
+            }
+            
+            if(!TargetLost)
+            {
+                Vector3 Targetdir = (Target.position - transform.position).normalized;
+
+                if (!Physics.Raycast(transform.position + Vector3.up * data.Offset, Targetdir, data.Dist, data.RaycastLayerMask))
+                {
+                    Target = null;
+                }
+            }
         }
 
         public void OnLateUpdate()

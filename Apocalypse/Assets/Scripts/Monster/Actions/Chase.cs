@@ -29,9 +29,7 @@ namespace Apocalypse
         public override bool Update()
         {
             if (base.Update()) return true;
-            Transform Target = blackBoard.FOV;
-            if(Target != null) blackBoard.Target = Target;
-            if(blackBoard.Target != null) blackBoard.TargetPos = blackBoard.Target.position;
+            if(!blackBoard.TargetLost) blackBoard.TargetPos = blackBoard.Target.position;
             return false;
         }
         public override void Exit()

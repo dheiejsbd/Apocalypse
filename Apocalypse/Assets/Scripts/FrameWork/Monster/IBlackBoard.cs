@@ -21,6 +21,7 @@ namespace FrameWork.Monster
         Apocalypse.SoundEvent SoundEvent { get; set; }
 
         Transform Target { get; set; }
+        bool TargetLost { get; }
         Vector3 TargetPos { get ; set; }
         
         Transform FOV { get; }

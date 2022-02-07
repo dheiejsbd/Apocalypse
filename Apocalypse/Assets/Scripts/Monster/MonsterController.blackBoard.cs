@@ -12,7 +12,9 @@ namespace Apocalypse
         public int HP { get ; set ; }
         public bool Hit { get; set; }
         public GameObject owner => gameObject;
+
         public Transform Target { get ; set ; }
+        public bool TargetLost { get { return Target == null; }}
         public Vector3 TargetPos { get { return AIPath.target.position; } set { AIPath.target.position = value; } }
 
         public List<SoundEvent> SoundEvents { get; set; }
