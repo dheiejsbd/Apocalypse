@@ -1,0 +1,22 @@
+﻿Hand
+Idle
+Fall
+Hide
+Hold
+PunchLeft
+     Right
+Jump
+Run
+
+fingerIdle
+FingerShoot
+
+Gun
+equip
+aim fire
+fire
+hold
+idle
+reload
+reloadEmpty
+unequip
