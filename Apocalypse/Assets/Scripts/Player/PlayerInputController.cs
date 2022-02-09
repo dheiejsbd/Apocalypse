@@ -14,11 +14,13 @@ namespace Apocalypse.Player
         #region Movement
         void Movement()
         {
+            Player.PreMove.Send();
             Move();
             Jump();
             Run();
             Crouch();
             Rotate();
+            Player.Move.Send();
         }
         void Rotate()
         {
@@ -30,7 +32,7 @@ namespace Apocalypse.Player
         {
             if (!Input.GetKeyDown(KeyCodeMap.instance.TryGetKeyID(KeyID.Jump))) return;
 
-            Player.Jump.Send();
+            Player.TryJump.Send();
         }
         private void Run()
         {
@@ -79,7 +81,7 @@ namespace Apocalypse.Player
 
         private void CharacterRotation()
         {
-            Player.CameraRotate.Send(Input.GetAxis("Mouse X"));
+            Player.CharacterRotate.Send(Input.GetAxis("Mouse X"));
         }
         #endregion
     }

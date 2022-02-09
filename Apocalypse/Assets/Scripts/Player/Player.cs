@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using FrameWork.Massage;
+using FrameWork.Message;
 
 namespace Apocalypse.Player
 {
@@ -13,19 +13,24 @@ namespace Apocalypse.Player
         public float stamina;
         public float hunger;
         public float thirst;
-        public Vector3 MoveInput;
+        [HideInInspector] public Vector3 MoveInput;
 
         #region MoveMassage
-        public Massage PreMove = new Massage();
-        public Massage Jump = new Massage();
-        public Massage Crouch = new Massage();
-        public Massage Move = new Massage();
-        public Massage<bool> Run = new Massage<bool>();
-        public Massage<float> CameraRotate = new Massage<float>();
-        public Massage<float> CharacterRotate = new Massage<float>();
+        public readonly Message PreMove = new Message();
+        public readonly Message TryJump = new Message();
+        public readonly Message Crouch = new Message();
+        public readonly Message Move = new Message();
+        public readonly Message<bool> Run = new Message<bool>();
+        public readonly Message<float> CameraRotate = new Message<float>();
+        public readonly Message<float> CharacterRotate = new Message<float>();
         #endregion
 
-        public Massage Attack;
+        #region AnimationMassage
+        public readonly Message Jump = new Message();
+        public readonly Message<bool> IsGround = new Message<bool>();
+        #endregion
+
+        public Message Attack = new Message();
 
     }
 }

@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FrameWork.Massage
+namespace FrameWork.Message
 {
-    public class Massage
+    public class Message
     {
         Action action;
         public float LastCallTime => m_CallTime;
         private float m_CallTime;
 
-        public void AddListner(Action _action)
+        public void AddListener(Action _action)
         {
-            action += action;
+            action += _action;
         }
-        public void RemoveListner(Action _action)
+        public void RemoveListener(Action _action)
         {
-            action -= action;
+            action -= _action;
         }
         public void Clear()
         {
@@ -29,19 +29,19 @@ namespace FrameWork.Massage
             action?.Invoke();
         }
     }
-    public class Massage<T>
+    public class Message<T>
     {
         Action<T> action;
         public float LastCallTime => m_CallTime;
         private float m_CallTime;
 
-        public void AddListner(Action<T> _action)
+        public void AddListener(Action<T> _action)
         {
-            action += action;
+            action += _action;
         }
-        public void RemoveListner(Action<T> _action)
+        public void RemoveListener(Action<T> _action)
         {
-            action -= action;
+            action -= _action;
         }
         public void Clear()
         {
@@ -54,19 +54,19 @@ namespace FrameWork.Massage
             action?.Invoke(T);
         }
     }
-    public class Massage<T, V>
+    public class Message<T, V>
     {
         Action<T, V> action;
         public float LastCallTime => m_CallTime;
         private float m_CallTime;
 
-        public void AddListner(Action<T,V> _action)
+        public void AddListener(Action<T,V> _action)
         {
-            action += action;
+            action += _action;
         }
-        public void RemoveListner(Action<T, V> _action)
+        public void RemoveListener(Action<T, V> _action)
         {
-            action -= action;
+            action -= _action;
         }
         public void Clear()
         {
@@ -79,19 +79,19 @@ namespace FrameWork.Massage
             action?.Invoke(T,V);
         }
     }
-    public class Massage<T, V, G>
+    public class Message<T, V, G>
     {
         Action<T, V, G> action;
         public float LastCallTime => m_CallTime;
         private float m_CallTime;
 
-        public void AddListner(Action<T, V, G> _action)
+        public void AddListener(Action<T, V, G> _action)
         {
-            action += action;
+            action += _action;
         }
-        public void RemoveListner(Action<T, V, G> _action)
+        public void RemoveListener(Action<T, V, G> _action)
         {
-            action -= action;
+            action -= _action;
         }
         public void Clear()
         {

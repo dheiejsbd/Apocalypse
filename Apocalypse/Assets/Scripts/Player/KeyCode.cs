@@ -17,18 +17,19 @@ namespace Apocalypse.Player
     }
     public class KeyCodeMap
     {
+        static KeyCodeMap _instance;
         public static KeyCodeMap instance
         {
             get
             {
-                if (instance == null)
+                if (_instance == null)
                 {
-                    instance = new KeyCodeMap();
-                    instance.Initialize();
+                    _instance = new KeyCodeMap();
+                    _instance.Initialize();
                 }
-                return instance;
+                return _instance;
             }
-            private set { instance = value; }
+            private set { _instance = value; }
         }
 
 

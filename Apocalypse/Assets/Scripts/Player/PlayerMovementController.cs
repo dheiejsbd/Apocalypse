@@ -57,18 +57,29 @@ namespace Apocalypse.Player
         {
             characterController = GetComponent<CharacterController>();
 
-            //초기화
+            Initialize();
+            AddListener();
+        }
+        void Initialize()
+        {
             applySpeed = walkMoveSpeed;
             originPosY = theCamera.transform.localPosition.y;
             applyCrouchPosY = originPosY;
-
-            Player.PreMove.AddListner(Gravity);
-            Player.PreMove.AddListner(IsGround);
-
-            Player.Jump.AddListner(TryJump);
-            Player.Crouch.AddListner(Crouch);
-            Player.Move.AddListner(Move);
         }
+
+        void AddListener()
+        {
+            Player.PreMove.AddListener(Gravity);
+            Player.PreMove.AddListener(IsGround);
+
+            Player.Run.AddListener(TryRun);
+            Player.TryJump.AddListener(TryJump);
+            Player.Crouch.AddListener(Crouch);
+            Player.CameraRotate.AddListener(CameraRotation);
+            Player.CharacterRotate.AddListener(CharacterRotation);
+            Player.Move.AddListener(Move);
+        }
+
         void Gravity()
         {
             velocityY += gravity * Time.deltaTime;
@@ -113,16 +124,17 @@ namespace Apocalypse.Player
         private void IsGround()
         {
             isGround = Physics.Raycast(transform.position + Vector3.up * 0.1f, Vector3.down, 0.2f, GroundLayerMask);
-            Debug.Log(isGround);
+            Player.IsGround.Send(isGround);
             if (!isGround) return;
 
             if (velocityY > 0)
             {
                 isGround = false;
+                Player.IsGround.Send(isGround);
                 return;
             }
 
-            Debug.DrawRay(transform.position + Vector3.up * 0.1f, Vector3.down * 0.2f, Color.red);
+            //Debug.DrawRay(transform.position + Vector3.up * 0.1f, Vector3.down * 0.2f, Color.red);
             velocityY = 0;
         }
 
@@ -142,6 +154,7 @@ namespace Apocalypse.Player
                 Crouch();
             }
 
+            Player.Jump.Send();
             velocityY = jumpForce;
         }
 
@@ -180,7 +193,7 @@ namespace Apocalypse.Player
         private void Move()
         {
             Vector3 _velocity = Player.MoveInput.normalized * applySpeed;
-
+            _velocity = characterController.transform.TransformDirection(_velocity);
             velocity = Vector3.Lerp(velocity, _velocity, velocityShift * Time.deltaTime);
             velocity = new Vector3(velocity.x, velocityY, velocity.z);
             characterController.Move(velocity * Time.deltaTime);
@@ -189,7 +202,8 @@ namespace Apocalypse.Player
         // 좌우 카메라 회전
         private void CharacterRotation(float _yRotation)
         {
-            Vector3 _characterRotationY = new Vector3(0f, _yRotation, 0f) * lookSensitivity;
+            _yRotation *= lookSensitivity;
+            Vector3 _characterRotationY = new Vector3(0f, _yRotation, 0f);
             characterController.transform.rotation = characterController.transform.rotation * Quaternion.Euler(_characterRotationY);
         }
 
