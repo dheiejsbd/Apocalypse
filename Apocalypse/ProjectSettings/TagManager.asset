@@ -19,8 +19,8 @@ TagManager:
   - Entity
   - Hitbox
   - Ground
-  - 
-  - 
+  - Player
+  - PlayerGroundChack
   - 
   - 
   - 

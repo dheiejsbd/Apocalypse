@@ -9,6 +9,7 @@ namespace Apocalypse.Player
         private void Update()
         {
             Movement();
+            Weapon();
         }
 
         #region Movement
@@ -83,6 +84,37 @@ namespace Apocalypse.Player
         {
             Player.CharacterRotate.Send(Input.GetAxis("Mouse X"));
         }
+        #endregion
+
+        #region Weapon
+        void Weapon()
+        {
+
+        }
+
+        void Fire()
+        {
+
+        }
+
+        void ChangeFireMode()
+        {
+
+        }
+
+        void Reload()
+        {
+
+        }
+
+        void ChangeWeapon()
+        {
+
+        }
+
+
+
+
         #endregion
     }
 }

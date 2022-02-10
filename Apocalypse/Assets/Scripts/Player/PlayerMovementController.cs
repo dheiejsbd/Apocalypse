@@ -53,6 +53,7 @@ namespace Apocalypse.Player
         private Camera theCamera;
         private CharacterController characterController;
 
+        Collider coll;
         void Start()
         {
             characterController = GetComponent<CharacterController>();
@@ -133,8 +134,7 @@ namespace Apocalypse.Player
                 Player.IsGround.Send(isGround);
                 return;
             }
-
-            //Debug.DrawRay(transform.position + Vector3.up * 0.1f, Vector3.down * 0.2f, Color.red);
+            Debug.DrawRay(transform.position + Vector3.up * 0.1f, Vector3.down * 0.2f, Color.red);
             velocityY = 0;
         }
 

@@ -15,7 +15,7 @@ namespace Apocalypse.Player
         public float thirst;
         [HideInInspector] public Vector3 MoveInput;
 
-        #region MoveMassage
+        #region MoveMessage
         public readonly Message PreMove = new Message();
         public readonly Message TryJump = new Message();
         public readonly Message Crouch = new Message();
@@ -25,12 +25,20 @@ namespace Apocalypse.Player
         public readonly Message<float> CharacterRotate = new Message<float>();
         #endregion
 
-        #region AnimationMassage
+        #region AnimationMessage
         public readonly Message Jump = new Message();
         public readonly Message<bool> IsGround = new Message<bool>();
         #endregion
 
-        public Message Attack = new Message();
+        #region WeaponMessage
+        public readonly Message<int> ChangeWeapon = new Message<int>();
+        public readonly Message Reload = new Message();
+        public readonly Message FireMode = new Message();
+        public readonly Message StartAttack = new Message();
+        public readonly Message EndAttack = new Message();
+        public readonly Message Aiming = new Message();
+        #endregion
+
 
     }
 }

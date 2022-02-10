@@ -13,7 +13,11 @@ namespace Apocalypse.Player
         Backward,
         Rightward,
         Leftward,
-
+        Weapon1,
+        Weapon2,
+        Weapon3,
+        Reload,
+        FireMode,
     }
     public class KeyCodeMap
     {
@@ -44,6 +48,11 @@ namespace Apocalypse.Player
             TryAdd(KeyID.Backward, KeyCode.S);
             TryAdd(KeyID.Rightward, KeyCode.D);
             TryAdd(KeyID.Leftward, KeyCode.A);
+            TryAdd(KeyID.Weapon1, KeyCode.Alpha1);
+            TryAdd(KeyID.Weapon2, KeyCode.Alpha2);
+            TryAdd(KeyID.Weapon3, KeyCode.Alpha3);
+            TryAdd(KeyID.Reload, KeyCode.R);
+            TryAdd(KeyID.FireMode, KeyCode.B);
         }
 
         public void TryAdd(KeyID ID, KeyCode value)

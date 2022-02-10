@@ -4,14 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/HQFPSTemplate/FiringRange/Scenes/FiringRange_Expanded.unity
-    guid: 43d0e18391e01924995e0ccacbca0276
-  - enabled: 1
-    path: Assets/HQFPSTemplate/FiringRange/Scenes/FiringRange.unity
-    guid: 950887b64125bbd4d90842cdfaa48b4d
-  - enabled: 1
-    path: Assets/HQFPSTemplate/FiringRange/Scenes/Prototype.unity
-    guid: a6eea56b7f935eb43a4d32bc9a3880a9
+  m_Scenes: []
   m_configObjects: {}
