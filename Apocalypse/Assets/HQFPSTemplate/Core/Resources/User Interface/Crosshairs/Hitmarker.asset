@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98778c608fa55d048949f51cc3b54ffa, type: 3}
+  m_Name: Hitmarker
+  m_EditorClassIdentifier: 
+  GraphicsInfo:
+    NormalColor: {r: 0, g: 0, b: 0, a: 0}
+    OnEntityColor: {r: 0, g: 0, b: 0, a: 0}
+    UnusableColor: {r: 0, g: 0, b: 0, a: 0}
+    ShowWhenAiming: 0
+    PivotRotation: 0
+    LeftSprite:
+      Sprite: {fileID: 0}
+      Size: {x: 0, y: 0}
+    RightSprite:
+      Sprite: {fileID: 0}
+      Size: {x: 0, y: 0}
+    CenterSprite:
+      Sprite: {fileID: 0}
+      Size: {x: 0, y: 0}
+    TopSprite:
+      Sprite: {fileID: 0}
+      Size: {x: 0, y: 0}
+    BottomSprite:
+      Sprite: {fileID: 0}
+      Size: {x: 0, y: 0}
+  ScaleInfo:
+    ScaleSpringData:
+      Stiffness: {x: 0, y: 0}
+      Damping: {x: 0, y: 0}
+    ItemUseScaleForce:
+      Force: {x: 5, y: 5}
+      Distribution: 5
+    ScaleMultiplier: 0
+    IdleScale: 1
+    CrouchScale: 0.75
+    ProneScale: 0.7
+    WalkScale: 1.5
+    RunScale: 2
+    AirborneMultiplier: 0
+    AimScaleMultiplier: 0.5

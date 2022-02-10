@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98778c608fa55d048949f51cc3b54ffa, type: 3}
+  m_Name: Crosshair 02
+  m_EditorClassIdentifier: 
+  GraphicsInfo:
+    NormalColor: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 0.78431374}
+    OnEntityColor: {r: 0.8584906, g: 0, b: 0, a: 0.84313726}
+    UnusableColor: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 0.19607843}
+    ShowWhenAiming: 0
+    PivotRotation: 45
+    LeftSprite:
+      Sprite: {fileID: 21300000, guid: 67467fe8cc67b7348b41949cfab7f3ef, type: 3}
+      Size: {x: 30, y: 30}
+    RightSprite:
+      Sprite: {fileID: 21300000, guid: e438d0b41e22d244eb22a61259b6143a, type: 3}
+      Size: {x: 30, y: 30}
+    CenterSprite:
+      Sprite: {fileID: 0}
+      Size: {x: 30, y: 30}
+    TopSprite:
+      Sprite: {fileID: 21300000, guid: 09016fb39f7a32143becbcead1012542, type: 3}
+      Size: {x: 30, y: 30}
+    BottomSprite:
+      Sprite: {fileID: 21300000, guid: b1dea41ba25d4fd459a5763d4d9ec567, type: 3}
+      Size: {x: 30, y: 30}
+  ScaleInfo:
+    ScaleSpringData:
+      Stiffness: {x: 0.01, y: 0.01}
+      Damping: {x: 0.2, y: 0.2}
+    ItemUseScaleForce:
+      Force: {x: 2.5, y: 2.5}
+      Distribution: 1
+    ScaleMultiplier: 3
+    IdleScale: 0.33333334
+    CrouchScale: 0.25
+    ProneScale: 0.23333333
+    WalkScale: 0.5
+    RunScale: 0.6666667
+    AirborneMultiplier: 3
+    AimScaleMultiplier: 0.8

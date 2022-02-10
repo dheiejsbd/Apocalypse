@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c811a43e547c6bc4b8380c96013d4258, type: 3}
+  m_Name: Animation_Baseball Bat
+  m_EditorClassIdentifier: 
+  m_EquipmentClips:
+    m_Controller: {fileID: 9100000, guid: 540bad8439832bc44bb4b8554834474c, type: 2}
+    m_Clips:
+    - Original: {fileID: 7400000, guid: 6fcd4ef4b0dd5df49a09e341d846c3d2, type: 2}
+      Override: {fileID: -881212082903116666, guid: fac05387da3f9244590bb1122fa1dd8a,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 1cee0a70c42f89f44ba4b62f9490d37d, type: 2}
+      Override: {fileID: -6479595298469923969, guid: fac05387da3f9244590bb1122fa1dd8a,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 4840586a7b8754540ad3832bd81aa20f, type: 2}
+      Override: {fileID: 6852801214173397010, guid: fac05387da3f9244590bb1122fa1dd8a,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 4966c1d6c082a3d46a96afb0b9716e91, type: 2}
+      Override: {fileID: -7620377702253780865, guid: fac05387da3f9244590bb1122fa1dd8a,
+        type: 3}
+    - Original: {fileID: 7400000, guid: b367d6df9dfca974099bb40670f5ead9, type: 2}
+      Override: {fileID: -6553155987363664755, guid: fac05387da3f9244590bb1122fa1dd8a,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 7192269aaafa4d54ea800b9cf70b323c, type: 2}
+      Override: {fileID: 8804366027139440895, guid: fac05387da3f9244590bb1122fa1dd8a,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 792eb763657629f48996651f7d4a52e6, type: 2}
+      Override: {fileID: 0}
+  m_FPArmsClips:
+    m_Controller: {fileID: 9100000, guid: 540bad8439832bc44bb4b8554834474c, type: 2}
+    m_Clips:
+    - Original: {fileID: 7400000, guid: 6fcd4ef4b0dd5df49a09e341d846c3d2, type: 2}
+      Override: {fileID: -6443665455714141827, guid: f0392aef00adc344bb3d27e06d5d326f,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 1cee0a70c42f89f44ba4b62f9490d37d, type: 2}
+      Override: {fileID: -8909436878230240042, guid: f0392aef00adc344bb3d27e06d5d326f,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 4840586a7b8754540ad3832bd81aa20f, type: 2}
+      Override: {fileID: -2003471282143960045, guid: f0392aef00adc344bb3d27e06d5d326f,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 4966c1d6c082a3d46a96afb0b9716e91, type: 2}
+      Override: {fileID: 868826224290098280, guid: f0392aef00adc344bb3d27e06d5d326f,
+        type: 3}
+    - Original: {fileID: 7400000, guid: b367d6df9dfca974099bb40670f5ead9, type: 2}
+      Override: {fileID: -3110764686464802327, guid: f0392aef00adc344bb3d27e06d5d326f,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 7192269aaafa4d54ea800b9cf70b323c, type: 2}
+      Override: {fileID: -9026725462250698500, guid: f0392aef00adc344bb3d27e06d5d326f,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 792eb763657629f48996651f7d4a52e6, type: 2}
+      Override: {fileID: 0}

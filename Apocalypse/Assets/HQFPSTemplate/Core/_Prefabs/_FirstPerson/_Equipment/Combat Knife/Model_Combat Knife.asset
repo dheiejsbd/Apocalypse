@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c795b09e3ddb8c5488ac8305c359a22c, type: 3}
+  m_Name: Model_Combat Knife
+  m_EditorClassIdentifier: 
+  FovProperty: _FOV
+  TargetFOV: 49
+  SkinIDProperty: Skin ID
+  Skins:
+    m_List:
+    - Name: Polished
+      SharedMesh: {fileID: 5537892491386892927, guid: 1a35791dcfb7ec9419a7149a5eb36145,
+        type: 3}
+      SharedMaterials:
+      - {fileID: 2100000, guid: da2aa8372bf40174ea8ff49490da346e, type: 2}
+    - Name: Painted
+      SharedMesh: {fileID: 5537892491386892927, guid: 1a35791dcfb7ec9419a7149a5eb36145,
+        type: 3}
+      SharedMaterials:
+      - {fileID: 2100000, guid: 3d14a36919c7b764ab629d8264f60ea2, type: 2}

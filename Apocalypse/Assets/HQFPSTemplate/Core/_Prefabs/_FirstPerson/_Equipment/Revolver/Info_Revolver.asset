@@ -1,0 +1,302 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 284c01f87d247664294767c412db3acd, type: 3}
+  m_Name: Info_Revolver
+  m_EditorClassIdentifier: 
+  General:
+    UseWhileAirborne: 1
+    UseWhileRunning: 1
+    CanStopReloading: 0
+    CrosshairID: 1
+    StaminaTakePerUse: 0
+    MovementSpeedMod: 0.97
+  Equipping:
+    Duration: 0.7
+    AnimationSpeed: 1.2
+    Audio:
+    - Delay: 0.075
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 0449fbe5d1232f8488e573b5e380189f, type: 3}
+        m_VolumeRange: {x: 0.2, y: 0.25}
+        m_PitchRange: {x: 0.9, y: 1}
+        m_VolumeMultiplier: 1
+    CameraForces:
+    - Delay: 0
+      Force:
+        Force: {x: -0.6, y: 0.25, z: -1}
+        Distribution: 6
+  Unequipping:
+    Duration: 0.65
+    AnimationSpeed: 1.3
+    Audio:
+    - Delay: 0
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 0449fbe5d1232f8488e573b5e380189f, type: 3}
+        m_VolumeRange: {x: 0.9, y: 1}
+        m_PitchRange: {x: 0.9, y: 1.1}
+        m_VolumeMultiplier: 0.18
+    CameraForces:
+    - Delay: 0.1
+      Force:
+        Force: {x: 0.55, y: -0.3, z: 0.7}
+        Distribution: 6
+  Aiming:
+    Enabled: 1
+    AimThreshold: 0.3
+    AimCamHeadbobMod: 1
+    AimMovementSpeedMod: 1
+    AimWhileAirborne: 1
+    UseAimBlur: 1
+    AimSounds:
+      m_Clips:
+        m_List:
+        - {fileID: 8300000, guid: 8621119ba0e1106459419de5ac7e7122, type: 3}
+        - {fileID: 8300000, guid: fa598a1541b963e4b9ffe3fe54cd9ab3, type: 3}
+      m_VolumeRange: {x: 0.15, y: 0.2}
+      m_PitchRange: {x: 0.9, y: 1.1}
+      m_VolumeMultiplier: 1
+  Shooting:
+    EnableAmmo: 1
+    MagazineSize: 6
+    Modes: 3
+    FireRateOverTime:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    FireDuration: 0.2
+    BurstLength: 3
+    BurstDuration: 0.3
+    BurstPause: 0.35
+    RoundsPerMinute: 100
+    HasDryFireAnim: 1
+    HasAlternativeFireAnim: 0
+    FireAnimationSpeed: 1.1
+    ShootAudio:
+      m_Clips:
+        m_List:
+        - {fileID: 8300000, guid: 8de92807ac1a07544a57e3e5bba6bbd4, type: 3}
+        - {fileID: 8300000, guid: 25676872c00170246afb3d8b6a5ab957, type: 3}
+      m_VolumeRange: {x: 0.9, y: 1}
+      m_PitchRange: {x: 0.95, y: 1.05}
+      m_VolumeMultiplier: 0.85
+    ShootTailAudio:
+      m_Clips:
+        m_List:
+        - {fileID: 8300000, guid: 5bc33a515810ab3499cd5d495a2f4ec2, type: 3}
+      m_VolumeRange: {x: 0.47, y: 0.5788487}
+      m_PitchRange: {x: 0.9, y: 1.1}
+      m_VolumeMultiplier: 0.2
+    DryShootAudio:
+      m_Clips:
+        m_List:
+        - {fileID: 8300000, guid: 81fd9e79b0c4de8429890ca05996ac9f, type: 3}
+      m_VolumeRange: {x: 0.4, y: 0.55}
+      m_PitchRange: {x: 0.9, y: 1.1}
+      m_VolumeMultiplier: 1
+    FireModeChangeAudio:
+      Delay: 0.15
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 72971118ec16e97428f1ab90674b2e5f, type: 3}
+        m_VolumeRange: {x: 0.25, y: 0.47596782}
+        m_PitchRange: {x: 0.9, y: 1.1}
+        m_VolumeMultiplier: 1
+    HandlingAudio:
+    - Delay: 0.15
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: a0a71feb5c664654fb9523c7c6b0b107, type: 3}
+        m_VolumeRange: {x: 0.2, y: 0.22}
+        m_PitchRange: {x: 1, y: 1.2}
+        m_VolumeMultiplier: 1
+    CasingDropAudio: []
+    HandlingCamForces: []
+  Reloading:
+    ReloadType: 0
+    ReloadStartDuration: 0
+    ReloadDuration: 3
+    ReloadEndDuration: 0
+    HasEmptyReload: 0
+    EmptyReloadDuration: 0
+    ProgressiveEmptyReload: 0
+    ReloadAnimationSpeed: 1
+    EmptyReloadAnimationSpeed: 0
+    ReloadSounds:
+    - Delay: 0.3
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 59bb4de2b54396947b37f57e82fb7c3a, type: 3}
+        m_VolumeRange: {x: 0.15, y: 0.2}
+        m_PitchRange: {x: 0.85, y: 0.9}
+        m_VolumeMultiplier: 1
+    - Delay: 0.85
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 535b59507ae8e4a449671b4e87af127d, type: 3}
+        m_VolumeRange: {x: 0.1, y: 0.1}
+        m_PitchRange: {x: 0.95, y: 1.05}
+        m_VolumeMultiplier: 1
+    - Delay: 1.75
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: f0f2a49ff350de84b89f9e7326936815, type: 3}
+          - {fileID: 8300000, guid: 27e655b40aa8d2e4b8a8a1a07dff4aa1, type: 3}
+        m_VolumeRange: {x: 0.05, y: 0.1}
+        m_PitchRange: {x: 0.95, y: 1.05}
+        m_VolumeMultiplier: 1
+    - Delay: 2.5
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 56d35b53f72dd4d4c8675d419c99e473, type: 3}
+        m_VolumeRange: {x: 0.15, y: 0.2}
+        m_PitchRange: {x: 0.95, y: 1.05}
+        m_VolumeMultiplier: 1
+    - Delay: 1.325
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: f1db6630a910cf94485de3b65d4a8d67, type: 3}
+        m_VolumeRange: {x: 0.2, y: 0.25}
+        m_PitchRange: {x: 0.95, y: 1.05}
+        m_VolumeMultiplier: 1
+    - Delay: 1.8
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: f0f2a49ff350de84b89f9e7326936815, type: 3}
+        m_VolumeRange: {x: 0.1, y: 0.12}
+        m_PitchRange: {x: 0.95, y: 1.05}
+        m_VolumeMultiplier: 1
+    ReloadStartSounds: []
+    ReloadEndSounds: []
+    EmptyReloadSounds: []
+    ReloadLoopCamForces:
+    - Delay: 0.475
+      Force:
+        Force: {x: 0.2, y: -0.27, z: 0}
+        Distribution: 9
+    - Delay: 0.9
+      Force:
+        Force: {x: -0.35, y: 0.25, z: 0}
+        Distribution: 9
+    - Delay: 1.7
+      Force:
+        Force: {x: 0.3, y: 0, z: 0}
+        Distribution: 7
+    - Delay: 2.3
+      Force:
+        Force: {x: 0.2, y: -0.5, z: 0.25}
+        Distribution: 5
+    - Delay: 2.5
+      Force:
+        Force: {x: 0.2, y: 0.5, z: 0.25}
+        Distribution: 5
+    ReloadStartCamForces: []
+    ReloadEndCamForces: []
+    EmptyReloadLoopCamForces: []
+  Projectile:
+    RayMask:
+      serializedVersion: 2
+      m_Bits: 5121
+    RayCount: 1
+    RaySpread: 1
+    SpreadOverTime:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.8
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    RayImpact:
+      m_MaxDamage: 60
+      m_MaxImpulse: 50
+      m_DistanceCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.8
+          value: 0.5
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_MaxDistance: 150

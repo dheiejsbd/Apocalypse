@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ed657eb80ead24bae5602fc18fdf4a, type: 3}
+  m_Name: Info_Unarmed
+  m_EditorClassIdentifier: 
+  General:
+    UseWhileAirborne: 0
+    UseWhileRunning: 0
+    CanStopReloading: 0
+    CrosshairID: 0
+    StaminaTakePerUse: 5
+    MovementSpeedMod: 1
+  Equipping:
+    Duration: 0.35
+    AnimationSpeed: 1.1
+    Audio:
+    - Delay: 0
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 2b3281cd6a278a441a10e83e5b27e99b, type: 3}
+        m_VolumeRange: {x: 0.5, y: 0.75}
+        m_PitchRange: {x: 0.9, y: 1}
+        m_VolumeMultiplier: 0.1
+    CameraForces:
+    - Delay: 0
+      Force:
+        Force: {x: 15, y: 0, z: 0}
+        Distribution: 1
+  Unequipping:
+    Duration: 0.2
+    AnimationSpeed: 1
+    Audio:
+    - Delay: 0
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 2b3281cd6a278a441a10e83e5b27e99b, type: 3}
+        m_VolumeRange: {x: 0.5, y: 0.75}
+        m_PitchRange: {x: 0.9, y: 1}
+        m_VolumeMultiplier: 0.1
+    CameraForces:
+    - Delay: 0
+      Force:
+        Force: {x: 0, y: 0, z: 0}
+        Distribution: 0
+  Aiming:
+    Enabled: 0
+    AimThreshold: 0
+    AimCamHeadbobMod: 1
+    AimMovementSpeedMod: 0
+    AimWhileAirborne: 0
+    UseAimBlur: 0
+    AimSounds:
+      m_Clips:
+        m_List: []
+      m_VolumeRange: {x: 0.5, y: 0.75}
+      m_PitchRange: {x: 0.9, y: 1.1}
+      m_VolumeMultiplier: 1
+  MeleeSettings:
+    HitMask:
+      serializedVersion: 2
+      m_Bits: 5121
+    MaxHitDistance: 1
+    ImpactEffect: 5
+    DamageType: 2
+    CanContinuouslyAttack: 0
+    ResetSwingsIfNotUsed: 0
+    ResetSwingsDelay: 1
+    SwingSelection: 1
+    Swings:
+    - SwingName: Left Jab
+      Cooldown: 0.3
+      CastDelay: 0.1
+      CastRadius: 0.2
+      HitDamage: 5
+      HitImpact: 10
+      AnimationIndex: 1
+      AnimationSpeed: 1.3
+      SwingAudio:
+        Delay: 0.1
+        Sound:
+          m_Clips:
+            m_List:
+            - {fileID: 8300000, guid: 674fd2f03c8ed5045b212ea20a13e3a0, type: 3}
+            - {fileID: 8300000, guid: 1f10c56640e24594e8d0093b0df0597e, type: 3}
+          m_VolumeRange: {x: 0.4, y: 0.5}
+          m_PitchRange: {x: 0.9, y: 1.1}
+          m_VolumeMultiplier: 0.3
+      HitAudio:
+        Delay: 0
+        Sound:
+          m_Clips:
+            m_List:
+            - {fileID: 8300000, guid: 1f10c56640e24594e8d0093b0df0597e, type: 3}
+            - {fileID: 8300000, guid: 674fd2f03c8ed5045b212ea20a13e3a0, type: 3}
+          m_VolumeRange: {x: 0.4, y: 0.5}
+          m_PitchRange: {x: 0.9, y: 1.1}
+          m_VolumeMultiplier: 0.2
+      SwingCamForces:
+        m_RotForce: {x: 0.4, y: -0.4, z: 0.4}
+        m_PosForce: {x: 2, y: 2, z: 1}
+        Distribution: 1
+        JitterForce:
+          xJitter: 0.208
+          yJitter: 0.208
+          zJitter: 0.193
+      HitCamForces:
+        m_RotForce: {x: 0.5, y: 0, z: -1}
+        m_PosForce: {x: 0, y: 2, z: 0}
+        Distribution: 1
+        JitterForce:
+          xJitter: 0.511
+          yJitter: 0.208
+          zJitter: 0.511
+    - SwingName: Right Jab
+      Cooldown: 0.3
+      CastDelay: 0.1
+      CastRadius: 0.2
+      HitDamage: 6
+      HitImpact: 11
+      AnimationIndex: 0
+      AnimationSpeed: 1.4
+      SwingAudio:
+        Delay: 0.1
+        Sound:
+          m_Clips:
+            m_List:
+            - {fileID: 8300000, guid: 1f10c56640e24594e8d0093b0df0597e, type: 3}
+            - {fileID: 8300000, guid: 674fd2f03c8ed5045b212ea20a13e3a0, type: 3}
+          m_VolumeRange: {x: 0.4, y: 0.5}
+          m_PitchRange: {x: 0.9, y: 1.1}
+          m_VolumeMultiplier: 0.3
+      HitAudio:
+        Delay: 0
+        Sound:
+          m_Clips:
+            m_List:
+            - {fileID: 8300000, guid: 674fd2f03c8ed5045b212ea20a13e3a0, type: 3}
+            - {fileID: 8300000, guid: 1f10c56640e24594e8d0093b0df0597e, type: 3}
+          m_VolumeRange: {x: 0.4, y: 0.5}
+          m_PitchRange: {x: 0.9, y: 1.1}
+          m_VolumeMultiplier: 0.2
+      SwingCamForces:
+        m_RotForce: {x: 0.4, y: 0.4, z: 0.4}
+        m_PosForce: {x: -2, y: 2, z: 1}
+        Distribution: 1
+        JitterForce:
+          xJitter: 0.228
+          yJitter: 0.228
+          zJitter: 0.223
+      HitCamForces:
+        m_RotForce: {x: 0.5, y: 0, z: 1}
+        m_PosForce: {x: 0, y: 2, z: 0}
+        Distribution: 1
+        JitterForce:
+          xJitter: 0.511
+          yJitter: 0.203
+          zJitter: 0.511
+  UnarmedSettings:
+    AlwaysShowArms: 0
+    ArmsShowDuration: 6
+    ShowArmsAudio:
+      Delay: 0.1
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 2276f66a7f686844a950b8ee64234741, type: 3}
+        m_VolumeRange: {x: 0.5, y: 0.75}
+        m_PitchRange: {x: 0.9, y: 1.1}
+        m_VolumeMultiplier: 0.12
+    RunAnimSpeed: 1.4
+    RunAnimStartTime: 0.25

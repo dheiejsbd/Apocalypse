@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c795b09e3ddb8c5488ac8305c359a22c, type: 3}
+  m_Name: Model_Hunting Rifle
+  m_EditorClassIdentifier: 
+  FovProperty: _FOV
+  TargetFOV: 46
+  SkinIDProperty: Skin ID
+  Skins:
+    m_List:
+    - Name: Rustic Wood
+      SharedMesh: {fileID: -281229341654309753, guid: b9acbff975f2973449734dd474b76b60,
+        type: 3}
+      SharedMaterials:
+      - {fileID: 2100000, guid: acef0234630b11a499e535de56240d4d, type: 2}
+      - {fileID: 2100000, guid: 11aeabbeacbc4064eba401240d0de400, type: 2}
+    - Name: Clean Wood
+      SharedMesh: {fileID: -281229341654309753, guid: b9acbff975f2973449734dd474b76b60,
+        type: 3}
+      SharedMaterials:
+      - {fileID: 2100000, guid: acef0234630b11a499e535de56240d4d, type: 2}
+      - {fileID: 2100000, guid: 11aeabbeacbc4064eba401240d0de400, type: 2}
