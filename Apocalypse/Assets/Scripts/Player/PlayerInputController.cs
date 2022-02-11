@@ -89,27 +89,72 @@ namespace Apocalypse.Player
         #region Weapon
         void Weapon()
         {
-
-        }
-
-        void Fire()
-        {
-
-        }
-
-        void ChangeFireMode()
-        {
-
-        }
-
-        void Reload()
-        {
-
+            ChangeWeapon();
+            Reload();
+            ChangeFireMode();
+            StartAttack();
+            EndAttack();
+            Attack();
         }
 
         void ChangeWeapon()
         {
+            if (Input.GetKeyDown(KeyCodeMap.instance.TryGetKeyID(KeyID.Weapon1)))
+            {
+                Player.ChangeWeapon.Send(1);
+                Player.EndAttack.Send();
+                return;
+            }
+            if (Input.GetKeyDown(KeyCodeMap.instance.TryGetKeyID(KeyID.Weapon2)))
+            {
+                Player.ChangeWeapon.Send(2);
+                Player.EndAttack.Send();
+                return;
+            }
+            if (Input.GetKeyDown(KeyCodeMap.instance.TryGetKeyID(KeyID.Weapon3)))
+            {
+                Player.ChangeWeapon.Send(3);
+                Player.EndAttack.Send();
+                return;
+            }
+        }
+        void Reload()
+        {
+            if (Input.GetKeyDown(KeyCodeMap.instance.TryGetKeyID(KeyID.Reload)))
+            {
+                Player.EndAttack.Send();
+                Player.Reload.Send();
+            }
+        }
+        void ChangeFireMode()
+        {
+            if (Input.GetKeyDown(KeyCodeMap.instance.TryGetKeyID(KeyID.FireMode)))
+            {
+                Player.EndAttack.Send();
+                Player.FireMode.Send();
+            }
+        }
 
+        void StartAttack()
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Player.StartAttack.Send();
+            }
+        }
+        void EndAttack()
+        {
+            if (Input.GetMouseButtonUp(0))
+            {
+                Player.EndAttack.Send();
+            }
+        }
+        void Attack()
+        {
+            if (Input.GetMouseButton(0))
+            {
+                Player.Attack.Send();
+            }
         }
 
 

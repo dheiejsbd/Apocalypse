@@ -16,43 +16,18 @@ MonoBehaviour:
   ammoType: 1
   MaxAmmo: 30
   RPM: 0.2
-  HandEquip: {fileID: 2305535666514970215, guid: a20b7f40948936b4ea795596332d7374,
-    type: 3}
-  HandFire: {fileID: 5737170999595062761, guid: a20b7f40948936b4ea795596332d7374,
-    type: 3}
-  HandAimFire: {fileID: -747737122493965878, guid: a20b7f40948936b4ea795596332d7374,
-    type: 3}
-  HandHold: {fileID: 3072728952610794736, guid: a20b7f40948936b4ea795596332d7374,
-    type: 3}
-  HandIdle: {fileID: 557723506667842734, guid: a20b7f40948936b4ea795596332d7374, type: 3}
-  HandReload: {fileID: 4719819117006555350, guid: a20b7f40948936b4ea795596332d7374,
-    type: 3}
-  HandReloadEmpty: {fileID: -4716269538211659100, guid: a20b7f40948936b4ea795596332d7374,
-    type: 3}
-  HandUnequip: {fileID: -3132535488934879278, guid: a20b7f40948936b4ea795596332d7374,
-    type: 3}
-  WeaponEquip: {fileID: -3367528321930161372, guid: 443228521b5ee44468b2a6e2d2480ad5,
-    type: 3}
-  WeaponAimFire: {fileID: 2215616812285052027, guid: 443228521b5ee44468b2a6e2d2480ad5,
-    type: 3}
-  WeaponFire: {fileID: 8147029326571754206, guid: 443228521b5ee44468b2a6e2d2480ad5,
-    type: 3}
-  WeaponHold: {fileID: -6481252778661413566, guid: 443228521b5ee44468b2a6e2d2480ad5,
-    type: 3}
-  WeaponIdle: {fileID: 8817360947109484601, guid: 443228521b5ee44468b2a6e2d2480ad5,
-    type: 3}
-  WeaponReload: {fileID: -7519333541616418319, guid: 443228521b5ee44468b2a6e2d2480ad5,
-    type: 3}
-  WeaponReloadEmpty: {fileID: -2696707790013172382, guid: 443228521b5ee44468b2a6e2d2480ad5,
-    type: 3}
-  WeaponUnequip: {fileID: 2445001611766297368, guid: 443228521b5ee44468b2a6e2d2480ad5,
-    type: 3}
+  Cansafety: 1
+  CanSingle: 1
+  Canburst: 0
+  CanAuto: 1
+  HandAnim: {fileID: 22100000, guid: da95054f6bbec694982269d28d4eabcc, type: 2}
+  GunAnim: {fileID: 0}
   RecoilX: 0
   RecoilY: 0
   AimRecoilX: 0
   AimRecoilY: 0
   ShotGroupingX: 0
   ShotGroupingY: 0
-  WalkSpeed: 0
-  RunSpeed: 0
-  CrouchSpeed: 0
+  WalkSpeed: 5
+  RunSpeed: 10
+  CrouchSpeed: 2.5

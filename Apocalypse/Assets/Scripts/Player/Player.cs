@@ -25,9 +25,15 @@ namespace Apocalypse.Player
         public readonly Message<float> CharacterRotate = new Message<float>();
         #endregion
 
-        #region AnimationMessage
+        #region ActionMessage
         public readonly Message Jump = new Message();
         public readonly Message<bool> IsGround = new Message<bool>();
+        #endregion
+
+
+        #region AnimationKeyFrameEvent
+        public readonly Message EnterMagazine = new Message();
+        public readonly Message EndReload = new Message();
         #endregion
 
         #region WeaponMessage
@@ -35,6 +41,7 @@ namespace Apocalypse.Player
         public readonly Message Reload = new Message();
         public readonly Message FireMode = new Message();
         public readonly Message StartAttack = new Message();
+        public readonly Message Attack = new Message();
         public readonly Message EndAttack = new Message();
         public readonly Message Aiming = new Message();
         #endregion
