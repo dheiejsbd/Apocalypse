@@ -741,6 +741,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1500052536}
+  - component: {fileID: 1500052537}
   m_Layer: 0
   m_Name: Guns
   m_TagString: Untagged
@@ -781,6 +782,18 @@ Transform:
   m_Father: {fileID: 596316911}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1500052537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500052535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe2afcf203607b49a4a920bd48f2fee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1590674353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2605,6 +2618,7 @@ GameObject:
   - component: {fileID: 543450653119760695}
   - component: {fileID: 5866666021331768141}
   - component: {fileID: 919132148661228430}
+  - component: {fileID: 919132148661228431}
   m_Layer: 0
   m_Name: FP_Arms_Unarmed
   m_TagString: Untagged
@@ -2622,6 +2636,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bd17b64934c4b7489f59007216e5412, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &919132148661228431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148661228429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3047e12614dee544da344561bb1977ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &919132149134393267
@@ -2736,13 +2762,29 @@ GameObject:
   m_Component:
   - component: {fileID: 543450653413435305}
   - component: {fileID: 5866666021591760339}
+  - component: {fileID: 919132149474999572}
   m_Layer: 0
   m_Name: FP_AKM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!114 &919132149474999572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149474999571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67901fd850295f74b9c6f7df20d4dca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: bf436f7c8aac09b4d88bd14e6f5ba23d, type: 2}
+  GunAnimator: {fileID: 0}
+  HandAnimator: {fileID: 5866666021331768141}
 --- !u!1 &919132149504087603
 GameObject:
   m_ObjectHideFlags: 0
@@ -9312,7 +9354,7 @@ Animator:
   m_GameObject: {fileID: 919132148661228429}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 81dcb03d49282f446b0aaf2b603ea7e8, type: 3}
-  m_Controller: {fileID: 9100000, guid: 9e5b5767d7812c74484c0c828c080d78, type: 2}
+  m_Controller: {fileID: 9100000, guid: 07a57ee452458754a87e872188101e80, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
