@@ -1,0 +1,568 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9439a5282c0b10b45bbb4929145a50f0, type: 3}
+  m_Name: Item Database
+  m_EditorClassIdentifier: 
+  m_Categories:
+  - m_Name: Assault Rifle
+    m_Items:
+    - m_Name: AKM
+      m_Id: 1871499
+      m_Category: Assault Rifle
+      m_Icon: {fileID: 21300000, guid: ba6df4bfa97c98649b1d35258104d543, type: 3}
+      m_Description: Full-Auto High damage Rfile
+      m_Pickup: {fileID: 7427319033866006036, guid: e359cb2d4842e124d8896a68e69d6cec,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List:
+        - m_Name: Ammo
+          m_Type: 1
+          m_FixedValue: 30
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Fire Mode
+          m_Type: 1
+          m_FixedValue: 8
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Ammo Type
+          m_Type: 3
+          m_FixedValue: -7870248
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Skin ID
+          m_Type: 1
+          m_FixedValue: 0
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+    - m_Name: F1
+      m_Id: -7257324
+      m_Category: Assault Rifle
+      m_Icon: {fileID: 21300000, guid: d145ca2be3c3fd94698cab15bb7b8f06, type: 3}
+      m_Description: Medium damage, Burst-Fire Rifle
+      m_Pickup: {fileID: 8845945599785134977, guid: 2c3c8dfc85621644a9ae7e52c1dbfd6b,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List:
+        - m_Name: Ammo
+          m_Type: 1
+          m_FixedValue: 24
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Fire Mode
+          m_Type: 1
+          m_FixedValue: 4
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Ammo Type
+          m_Type: 3
+          m_FixedValue: -99002
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Skin ID
+          m_Type: 1
+          m_FixedValue: 0
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+    - m_Name: M1A
+      m_Id: 9800258
+      m_Category: Assault Rifle
+      m_Icon: {fileID: 21300000, guid: 1312875495b12a64d9130d9b628bab58, type: 3}
+      m_Description: Semi-Auto High Damage Rifle
+      m_Pickup: {fileID: 3181137914584553151, guid: 004f2ca12433c3042ba609043d4472a8,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List:
+        - m_Name: Ammo
+          m_Type: 1
+          m_FixedValue: 15
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Fire Mode
+          m_Type: 1
+          m_FixedValue: 2
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Ammo Type
+          m_Type: 3
+          m_FixedValue: -8720887
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Skin ID
+          m_Type: 1
+          m_FixedValue: 0
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+  - m_Name: Sniper Rifle
+    m_Items:
+    - m_Name: Hunting Rifle
+      m_Id: 6723924
+      m_Category: Sniper Rifle
+      m_Icon: {fileID: 21300000, guid: a70eaa6d5d57f7b419ec7a6c028712c6, type: 3}
+      m_Description: 'High-Damage Sniper Rifle,
+
+        Usually used for Hunting'
+      m_Pickup: {fileID: 2526034126245810020, guid: 3c1a4714817b86e49b18627152fe2d9d,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List:
+        - m_Name: Ammo
+          m_Type: 1
+          m_FixedValue: 5
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Fire Mode
+          m_Type: 1
+          m_FixedValue: 2
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Ammo Type
+          m_Type: 3
+          m_FixedValue: -9448299
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Skin ID
+          m_Type: 1
+          m_FixedValue: 0
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+  - m_Name: Handgun
+    m_Items:
+    - m_Name: M1911
+      m_Id: -7672806
+      m_Category: Handgun
+      m_Icon: {fileID: 21300000, guid: 343f4ca74d16e4a4bae9aa590e1fb8fa, type: 3}
+      m_Description: Standard .45ACP Handgun
+      m_Pickup: {fileID: 4998741051283506877, guid: 7ad6534d4787c644bb65a7d4d63d9114,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List:
+        - m_Name: Ammo
+          m_Type: 1
+          m_FixedValue: 7
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Fire Mode
+          m_Type: 1
+          m_FixedValue: 2
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Ammo Type
+          m_Type: 3
+          m_FixedValue: 5509803
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Skin ID
+          m_Type: 1
+          m_FixedValue: 0
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+    - m_Name: Revolver
+      m_Id: -6478361
+      m_Category: Handgun
+      m_Icon: {fileID: 21300000, guid: 7bdab2b1f8172dd42940c73ec82a488c, type: 3}
+      m_Description: Hi-power Handgun
+      m_Pickup: {fileID: 1017997944346929099, guid: 8b591ad14433851489193c50ea93d39e,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List:
+        - m_Name: Ammo
+          m_Type: 1
+          m_FixedValue: 6
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Fire Mode
+          m_Type: 1
+          m_FixedValue: 2
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Ammo Type
+          m_Type: 3
+          m_FixedValue: 247959
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Skin ID
+          m_Type: 1
+          m_FixedValue: 0
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+  - m_Name: Shotgun
+    m_Items:
+    - m_Name: Double Barrel Shotgun
+      m_Id: -6243563
+      m_Category: Shotgun
+      m_Icon: {fileID: 21300000, guid: 02a1fea55352de144af0b9ea6add8823, type: 3}
+      m_Description: Twin-Barreled Shotgun
+      m_Pickup: {fileID: 3927075398073897018, guid: 1abb0c80afa0d8345852e21555b23db9,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List:
+        - m_Name: Ammo
+          m_Type: 1
+          m_FixedValue: 2
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Fire Mode
+          m_Type: 1
+          m_FixedValue: 2
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Ammo Type
+          m_Type: 3
+          m_FixedValue: 7427251
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Skin ID
+          m_Type: 1
+          m_FixedValue: 0
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+    - m_Name: R870
+      m_Id: -3683780
+      m_Category: Shotgun
+      m_Icon: {fileID: 21300000, guid: 27160cd4043789d45bbd788baea596ad, type: 3}
+      m_Description: Pump-action Shotgun
+      m_Pickup: {fileID: 8134371035563141481, guid: 7f5507165a5fc0c48a5ecb3f9a182c06,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List:
+        - m_Name: Ammo
+          m_Type: 1
+          m_FixedValue: 7
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Fire Mode
+          m_Type: 1
+          m_FixedValue: 2
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Ammo Type
+          m_Type: 3
+          m_FixedValue: 7427251
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Skin ID
+          m_Type: 1
+          m_FixedValue: 0
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+  - m_Name: SMG
+    m_Items:
+    - m_Name: MP5
+      m_Id: 3820651
+      m_Category: SMG
+      m_Icon: {fileID: 21300000, guid: 184d68930b633c84a92498ed0bddc6b3, type: 3}
+      m_Description: Standard SMG
+      m_Pickup: {fileID: 9176248324725260122, guid: 7c7089ac428730546bc77d4bfccd9750,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List:
+        - m_Name: Ammo
+          m_Type: 1
+          m_FixedValue: 30
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Fire Mode
+          m_Type: 1
+          m_FixedValue: 8
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Ammo Type
+          m_Type: 3
+          m_FixedValue: 5509803
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Skin ID
+          m_Type: 1
+          m_FixedValue: 0
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+  - m_Name: Bow
+    m_Items:
+    - m_Name: Crossbow
+      m_Id: 4780466
+      m_Category: Bow
+      m_Icon: {fileID: 21300000, guid: 7d511686a9a910d45aa6a230244da0a9, type: 3}
+      m_Description: Arrow Launching Device
+      m_Pickup: {fileID: 4415854611412878293, guid: 7cd3f38b2fa8b6f44b8437e10f12522f,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List:
+        - m_Name: Ammo
+          m_Type: 1
+          m_FixedValue: 1
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Fire Mode
+          m_Type: 1
+          m_FixedValue: 2
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Ammo Type
+          m_Type: 3
+          m_FixedValue: 9973611
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Skin ID
+          m_Type: 1
+          m_FixedValue: 0
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+  - m_Name: Special
+    m_Items:
+    - m_Name: Flare Gun
+      m_Id: -4863645
+      m_Category: Special
+      m_Icon: {fileID: 21300000, guid: c59582cc57072c84093de471935f9013, type: 3}
+      m_Description: Signal Pistol
+      m_Pickup: {fileID: 8611800649635122117, guid: 9a3918db236de784a9c25a4bea4b97da,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List:
+        - m_Name: Ammo
+          m_Type: 1
+          m_FixedValue: 1
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Fire Mode
+          m_Type: 1
+          m_FixedValue: 2
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Ammo Type
+          m_Type: 3
+          m_FixedValue: -4179150
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+        - m_Name: Skin ID
+          m_Type: 1
+          m_FixedValue: 0
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+  - m_Name: Throwing Weapon
+    m_Items:
+    - m_Name: Frag Grenade
+      m_Id: -2430799
+      m_Category: Throwing Weapon
+      m_Icon: {fileID: 21300000, guid: ac883a87dab662441a656e568ef60c73, type: 3}
+      m_Description: Devastating fragmentation grenade
+      m_Pickup: {fileID: 7943916531166735521, guid: 33e8844e277d9d04c9fdeb405c1b7e35,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List: []
+    - m_Name: Molotov Cocktail
+      m_Id: -1071354
+      m_Category: Throwing Weapon
+      m_Icon: {fileID: 21300000, guid: 2349008656e5211488df9337d780e638, type: 3}
+      m_Description: Fire Bomb
+      m_Pickup: {fileID: 996539378446055161, guid: 0304e36ee76232245985516dee977f19,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List: []
+  - m_Name: Melee Weapon
+    m_Items:
+    - m_Name: Combat Knife
+      m_Id: -5793815
+      m_Category: Melee Weapon
+      m_Icon: {fileID: 21300000, guid: 4f62bbd0c716c60498d24ebf0ef9f5cd, type: 3}
+      m_Description: Sharp & easy to handle Knife
+      m_Pickup: {fileID: 8586099996222182631, guid: d4e8c6c7d356b7c4a914ca5db3bbdd04,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List:
+        - m_Name: Skin ID
+          m_Type: 1
+          m_FixedValue: 0
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+    - m_Name: Fire Axe
+      m_Id: -5259635
+      m_Category: Melee Weapon
+      m_Icon: {fileID: 21300000, guid: 3855a76d5f4e6784d8c267c4750071dd, type: 3}
+      m_Description: Standard Fire Axe
+      m_Pickup: {fileID: 565656415996384351, guid: 1becf66bceb90fb418d021567058414e,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List:
+        - m_Name: Skin ID
+          m_Type: 1
+          m_FixedValue: 0
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+    - m_Name: Baseball Bat
+      m_Id: -6508819
+      m_Category: Melee Weapon
+      m_Icon: {fileID: 21300000, guid: 700f064c43c3241409b0536f9cd32137, type: 3}
+      m_Description: Spiked Baseball Bat
+      m_Pickup: {fileID: 1963718291082426385, guid: ffe7eba8c96821a48bf2e02fd6ab8327,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List:
+        - m_Name: Skin ID
+          m_Type: 1
+          m_FixedValue: 0
+          m_UseRandomValue: 0
+          m_RandomValueRange: {x: 0, y: 0}
+  - m_Name: Tool
+    m_Items:
+    - m_Name: Flashlight
+      m_Id: -5955624
+      m_Category: Tool
+      m_Icon: {fileID: 21300000, guid: f367ad88aa929aa408d770a439010f30, type: 3}
+      m_Description: Standard Flashlight
+      m_Pickup: {fileID: 8144553452598729003, guid: 589f3f267d969a04a87d69d855e871c4,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List: []
+    - m_Name: Compass
+      m_Id: -1690247
+      m_Category: Tool
+      m_Icon: {fileID: 21300000, guid: bba965aa88edbfc4c918f019d0a0b368, type: 3}
+      m_Description: Standard Compass
+      m_Pickup: {fileID: 8144553452598729003, guid: 62d6a34ec846b594180458cf6462d7ef,
+        type: 3}
+      m_StackSize: 1
+      m_Properties:
+        m_List: []
+  - m_Name: Healing Item
+    m_Items:
+    - m_Name: Syringe
+      m_Id: 1169401
+      m_Category: Healing Item
+      m_Icon: {fileID: 21300000, guid: cc7ea6eeb061f594687f662a8d37625e, type: 3}
+      m_Description: Use it for a quick patch up
+      m_Pickup: {fileID: 8505612844008397183, guid: b025cbf0a27c9d04dacfc66ffd47a9b0,
+        type: 3}
+      m_StackSize: 5
+      m_Properties:
+        m_List: []
+  - m_Name: Ammunition
+    m_Items:
+    - m_Name: Flare
+      m_Id: -4179150
+      m_Category: Ammunition
+      m_Icon: {fileID: 21300000, guid: 935dbf120fb637e43b41e4778304e411, type: 3}
+      m_Description: 
+      m_Pickup: {fileID: 1683307441963356, guid: 83ba2ad6fbdd7d04e9aede063f489115,
+        type: 3}
+      m_StackSize: 5
+      m_Properties:
+        m_List: []
+    - m_Name: Arrow
+      m_Id: 9973611
+      m_Category: Ammunition
+      m_Icon: {fileID: 21300000, guid: c28f63bc8b7558d4fab5dc2295d9d49e, type: 3}
+      m_Description: Standard Bow Arrow
+      m_Pickup: {fileID: 1683307441963356, guid: 112ea7236f677b74db20a3a8ba63ff66,
+        type: 3}
+      m_StackSize: 30
+      m_Properties:
+        m_List: []
+    - m_Name: 357M
+      m_Id: 247959
+      m_Category: Ammunition
+      m_Icon: {fileID: 21300000, guid: 1616a99e4b5a31d42b0a6278b288c389, type: 3}
+      m_Description: 
+      m_Pickup: {fileID: 36740786862257034, guid: f71b632ac7718904ba41a4661b931598,
+        type: 3}
+      m_StackSize: 30
+      m_Properties:
+        m_List: []
+    - m_Name: 45ACP
+      m_Id: 5509803
+      m_Category: Ammunition
+      m_Icon: {fileID: 21300000, guid: 1616a99e4b5a31d42b0a6278b288c389, type: 3}
+      m_Description: 
+      m_Pickup: {fileID: 3328120415746168360, guid: 9a54f820d4d926a47ad07ce5a9d36905,
+        type: 3}
+      m_StackSize: 120
+      m_Properties:
+        m_List: []
+    - m_Name: 300WM
+      m_Id: -9448299
+      m_Category: Ammunition
+      m_Icon: {fileID: 21300000, guid: cd33972c26d57ba4ba27e56ccdc78aaf, type: 3}
+      m_Description: 
+      m_Pickup: {fileID: 2537516386621482725, guid: d6ddebf84561ecf438743fead283951a,
+        type: 3}
+      m_StackSize: 50
+      m_Properties:
+        m_List: []
+    - m_Name: 5.56x45mm
+      m_Id: -99002
+      m_Category: Ammunition
+      m_Icon: {fileID: 21300000, guid: c00e682cd98dac441a80f0733cd0c8dd, type: 3}
+      m_Description: 
+      m_Pickup: {fileID: 5501260718264316448, guid: 4d9827378e01fbf4db836cbaa8f8f9b0,
+        type: 3}
+      m_StackSize: 120
+      m_Properties:
+        m_List: []
+    - m_Name: 7.62x51mm
+      m_Id: -8720887
+      m_Category: Ammunition
+      m_Icon: {fileID: 21300000, guid: c00e682cd98dac441a80f0733cd0c8dd, type: 3}
+      m_Description: 
+      m_Pickup: {fileID: 5507661243739369011, guid: 481d9f659a1dd804dab1dfc64df71851,
+        type: 3}
+      m_StackSize: 90
+      m_Properties:
+        m_List: []
+    - m_Name: 7.62x39mm
+      m_Id: -7870248
+      m_Category: Ammunition
+      m_Icon: {fileID: 21300000, guid: c00e682cd98dac441a80f0733cd0c8dd, type: 3}
+      m_Description: 
+      m_Pickup: {fileID: 4783110227008939968, guid: 944a0b0633c45d4458bbd6c6b02c84e1,
+        type: 3}
+      m_StackSize: 120
+      m_Properties:
+        m_List: []
+    - m_Name: 12 Gauge Shell
+      m_Id: 7427251
+      m_Category: Ammunition
+      m_Icon: {fileID: 21300000, guid: 935dbf120fb637e43b41e4778304e411, type: 3}
+      m_Description: 
+      m_Pickup: {fileID: 8187976217818320107, guid: d1e846af18bfd18499b441dd8d5c9788,
+        type: 3}
+      m_StackSize: 32
+      m_Properties:
+        m_List: []
+  m_ItemProperties:
+    m_List:
+    - Name: Ammo
+      Type: 1
+    - Name: Fire Mode
+      Type: 1
+    - Name: Ammo Type
+      Type: 3
+    - Name: Skin ID
+      Type: 1
+    - Name: Durability
+      Type: 2

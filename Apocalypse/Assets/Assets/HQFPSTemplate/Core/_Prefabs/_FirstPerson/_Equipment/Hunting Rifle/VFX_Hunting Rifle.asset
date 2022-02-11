@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc2e03ac99bab304aa603f2904433dbd, type: 3}
+  m_Name: VFX_Hunting Rifle
+  m_EditorClassIdentifier: 
+  ParticleEffects:
+    MuzzleFlashPrefab: {fileID: 1611179162520996753, guid: 039ed809d880aa744bcc3bba7cc45e29,
+      type: 3}
+    MuzzleFlashOffset: {x: 0.05, y: 0.3, z: 0.025}
+    MuzzleFlashRandomScale: {x: 0.17, y: 0.2}
+    MuzzleFlashRandomRot: {x: 25, y: 50, z: 50}
+    TracerPrefab: {fileID: 1735467526708890, guid: 81e64d37cd6bc6644a169e1c1d4b12b8,
+      type: 3}
+    TracerOffset: {x: 0, y: 0, z: 0}
+  CasingEjection:
+    CasingPrefab: {fileID: 1866527559420537051, guid: 1f0d764f60cf9ff4badf3c20247e2a53,
+      type: 3}
+    SpawnDelay: 1.3
+    CasingScale: 0.4
+    Spin: 0.5
+    SpawnOffset: {x: 0.05, y: -0.05, z: 0}
+    AimSpawnOffset: {x: 0, y: -0.05, z: 0}
+    SpawnVelocity: {x: 1.5, y: 2.8, z: 0.5}
+  MagazineEjection:
+    MagazinePrefab: {fileID: 6127521804287668431, guid: f0fa536adc54e8e479ad3a04664a66cc,
+      type: 3}
+    SpawnDelay: 1.5
+    MagazineVelocity: {x: 1.5, y: 2, z: 1.5}
+    MagazineAngularVelocity: {x: -1.5, y: 2, z: 1.5}

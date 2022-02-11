@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c811a43e547c6bc4b8380c96013d4258, type: 3}
+  m_Name: Animation_Flashlight
+  m_EditorClassIdentifier: 
+  m_EquipmentClips:
+    m_Controller: {fileID: 9100000, guid: 0f70562277cafc2439947a60804d6400, type: 2}
+    m_Clips:
+    - Original: {fileID: 7400000, guid: 6fcd4ef4b0dd5df49a09e341d846c3d2, type: 2}
+      Override: {fileID: 7419605468008315431, guid: cd98cd3766c7dda4ab5fde8b6df33d87,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 4966c1d6c082a3d46a96afb0b9716e91, type: 2}
+      Override: {fileID: -7392462498091270056, guid: cd98cd3766c7dda4ab5fde8b6df33d87,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 1cee0a70c42f89f44ba4b62f9490d37d, type: 2}
+      Override: {fileID: 7612233598148045332, guid: cd98cd3766c7dda4ab5fde8b6df33d87,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 950eee3d4ad5ca94db617191d3dda239, type: 2}
+      Override: {fileID: 3340302173168562195, guid: cd98cd3766c7dda4ab5fde8b6df33d87,
+        type: 3}
+  m_FPArmsClips:
+    m_Controller: {fileID: 9100000, guid: 0f70562277cafc2439947a60804d6400, type: 2}
+    m_Clips:
+    - Original: {fileID: 7400000, guid: 6fcd4ef4b0dd5df49a09e341d846c3d2, type: 2}
+      Override: {fileID: 5473056745151456003, guid: 772fc44a698250f4fae9284c29c3a354,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 4966c1d6c082a3d46a96afb0b9716e91, type: 2}
+      Override: {fileID: -6442078947726823758, guid: 772fc44a698250f4fae9284c29c3a354,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 1cee0a70c42f89f44ba4b62f9490d37d, type: 2}
+      Override: {fileID: -2432014218800865095, guid: 772fc44a698250f4fae9284c29c3a354,
+        type: 3}
+    - Original: {fileID: 7400000, guid: 950eee3d4ad5ca94db617191d3dda239, type: 2}
+      Override: {fileID: -6150562527074411254, guid: 772fc44a698250f4fae9284c29c3a354,
+        type: 3}

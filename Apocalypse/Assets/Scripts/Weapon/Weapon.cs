@@ -7,43 +7,6 @@ namespace Apocalypse.Weapon
     [CreateAssetMenu(fileName = "Weapon", menuName = "ScriptableObject/Weapon", order = int.MaxValue)]
     public class Weapon : ScriptableObject
     {
-        #region Anim
-        #region HandAnim
-        public Animation HandEquip;
-        public Animation HandFire;
-        public Animation HandAimFire;
-        public Animation HandHold;
-        public Animation HandIdle;
-        public Animation HandReload;
-        public Animation HandReloadEmpty;
-        public Animation HandUnequip;
-        #endregion
-
-        #region WeaponAnim
-        public Animation WeaponEquip;
-        public Animation WeaponAimFire;
-        public Animation WeaponFire;
-        public Animation WeaponHold;
-        public Animation WeaponIdle;
-        public Animation WeaponReload;
-        public Animation WeaponReloadEmpty;
-        public Animation WeaponUnequip;
-        #endregion
-        #endregion
-
-        #region Recoil
-        public float RecoilX;
-        public float RecoilY;
-        
-        public float AimRecoilX;
-        public float AimRecoilY;
-        #endregion
-
-        #region ShotGrouping
-        public float ShotGroupingX;
-        public float ShotGroupingY;
-        #endregion
-
         #region Stat
         public string Name;
         public AmmoType ammoType;
@@ -54,13 +17,54 @@ namespace Apocalypse.Weapon
         bool burst;
         bool Auto;
         #endregion
+        #region Anim
+        [Header("HandAnim")]
+        #region HandAnim
+        public AnimationClip HandEquip;
+        public AnimationClip HandFire;
+        public AnimationClip HandAimFire;
+        public AnimationClip HandHold;
+        public AnimationClip HandIdle;
+        public AnimationClip HandReload;
+        public AnimationClip HandReloadEmpty;
+        public AnimationClip HandUnequip;
+        #endregion
+        [Header("WeaponAnim")]
+        #region WeaponAnim
+        public AnimationClip WeaponEquip;
+        public AnimationClip WeaponAimFire;
+        public AnimationClip WeaponFire;
+        public AnimationClip WeaponHold;
+        public AnimationClip WeaponIdle;
+        public AnimationClip WeaponReload;
+        public AnimationClip WeaponReloadEmpty;
+        public AnimationClip WeaponUnequip;
+        #endregion
+        #endregion
+        [Header("Recoil")]
+        #region Recoil
+        public float RecoilX;
+        public float RecoilY;
+        
+        public float AimRecoilX;
+        public float AimRecoilY;
+        #endregion
 
+        [Header("ShotGruping")]
+        #region ShotGrouping
+        public float ShotGroupingX;
+        public float ShotGroupingY;
+        #endregion
+
+
+        [Header("MoveSpeed")]
         #region MoveSpeed
         public float WalkSpeed;
         public float RunSpeed;
         public float CrouchSpeed;
         #endregion
 
+        [Header("Sound")]
         #region Sound
 
         AudioClip[] Shoot;

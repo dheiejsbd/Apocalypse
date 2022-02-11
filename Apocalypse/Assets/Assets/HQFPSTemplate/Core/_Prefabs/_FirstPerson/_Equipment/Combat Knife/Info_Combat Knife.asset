@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21498f0499b96d446b6b5cfc7cab8b7e, type: 3}
+  m_Name: Info_Combat Knife
+  m_EditorClassIdentifier: 
+  General:
+    UseWhileAirborne: 1
+    UseWhileRunning: 0
+    CanStopReloading: 0
+    CrosshairID: 0
+    StaminaTakePerUse: 6
+    MovementSpeedMod: 0.97
+  Equipping:
+    Duration: 0.65
+    AnimationSpeed: 1.1
+    Audio:
+    - Delay: 0.075
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 6ed8e9d00b4a6484d91eb996a6c83352, type: 3}
+        m_VolumeRange: {x: 0.05, y: 0.1}
+        m_PitchRange: {x: 0.9, y: 1}
+        m_VolumeMultiplier: 1
+    CameraForces:
+    - Delay: 0.2
+      Force:
+        Force: {x: -1, y: 0.5, z: -1}
+        Distribution: 6
+  Unequipping:
+    Duration: 0.6
+    AnimationSpeed: 1.35
+    Audio:
+    - Delay: 0
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 0449fbe5d1232f8488e573b5e380189f, type: 3}
+        m_VolumeRange: {x: 0.9, y: 1}
+        m_PitchRange: {x: 0.9, y: 1.1}
+        m_VolumeMultiplier: 0.125
+    CameraForces:
+    - Delay: 0.2
+      Force:
+        Force: {x: 0.9, y: -0.4, z: 0.7}
+        Distribution: 6
+  Aiming:
+    Enabled: 0
+    AimThreshold: 0
+    AimCamHeadbobMod: 1
+    AimMovementSpeedMod: 0
+    AimWhileAirborne: 0
+    UseAimBlur: 0
+    AimSounds:
+      m_Clips:
+        m_List: []
+      m_VolumeRange: {x: 0.5, y: 0.75}
+      m_PitchRange: {x: 0.9, y: 1.1}
+      m_VolumeMultiplier: 1
+  MeleeSettings:
+    HitMask:
+      serializedVersion: 2
+      m_Bits: 5121
+    MaxHitDistance: 1.2
+    ImpactEffect: 4
+    DamageType: 1
+    CanContinuouslyAttack: 1
+    ResetSwingsIfNotUsed: 1
+    ResetSwingsDelay: 1
+    SwingSelection: 1
+    Swings:
+    - SwingName: Stab 1
+      Cooldown: 0.43
+      CastDelay: 0.2
+      CastRadius: 0.1
+      HitDamage: 25
+      HitImpact: 15
+      AnimationIndex: 0
+      AnimationSpeed: 1.3
+      SwingAudio:
+        Delay: 0.1
+        Sound:
+          m_Clips:
+            m_List:
+            - {fileID: 8300000, guid: 1f10c56640e24594e8d0093b0df0597e, type: 3}
+            - {fileID: 8300000, guid: 24d3d38c05d97e841954876e7453a41c, type: 3}
+          m_VolumeRange: {x: 0.15, y: 0.2}
+          m_PitchRange: {x: 0.9, y: 1.1}
+          m_VolumeMultiplier: 1
+      HitAudio:
+        Delay: 0
+        Sound:
+          m_Clips:
+            m_List:
+            - {fileID: 8300000, guid: f5eb38bf5ff7298498ecd00cde021d6d, type: 3}
+            - {fileID: 8300000, guid: 7b719669c086b0248b8c95f302fba92b, type: 3}
+            - {fileID: 8300000, guid: 5011cf025399ca341a7d8b42f42059c2, type: 3}
+          m_VolumeRange: {x: 0.5, y: 0.75}
+          m_PitchRange: {x: 0.9, y: 1.1}
+          m_VolumeMultiplier: 0.1
+      SwingCamForces:
+        m_RotForce: {x: 0.6, y: 0, z: -0.5}
+        m_PosForce: {x: 0, y: 0, z: 0}
+        Distribution: 0
+        JitterForce:
+          xJitter: 1
+          yJitter: 1
+          zJitter: 1
+      HitCamForces:
+        m_RotForce: {x: 1, y: 0, z: 0}
+        m_PosForce: {x: 0, y: 1.5, z: 0}
+        Distribution: 0
+        JitterForce:
+          xJitter: 0.664
+          yJitter: 0.695
+          zJitter: 0.67
+    - SwingName: Stab 2
+      Cooldown: 0.43
+      CastDelay: 0.2
+      CastRadius: 0.1
+      HitDamage: 27
+      HitImpact: 16
+      AnimationIndex: 1
+      AnimationSpeed: 1.3
+      SwingAudio:
+        Delay: 0.1
+        Sound:
+          m_Clips:
+            m_List:
+            - {fileID: 8300000, guid: 674fd2f03c8ed5045b212ea20a13e3a0, type: 3}
+            - {fileID: 8300000, guid: 24d3d38c05d97e841954876e7453a41c, type: 3}
+          m_VolumeRange: {x: 0.15, y: 0.2}
+          m_PitchRange: {x: 0.9, y: 1.1}
+          m_VolumeMultiplier: 1
+      HitAudio:
+        Delay: 0
+        Sound:
+          m_Clips:
+            m_List:
+            - {fileID: 8300000, guid: 7b719669c086b0248b8c95f302fba92b, type: 3}
+            - {fileID: 8300000, guid: 5011cf025399ca341a7d8b42f42059c2, type: 3}
+            - {fileID: 8300000, guid: f5eb38bf5ff7298498ecd00cde021d6d, type: 3}
+          m_VolumeRange: {x: 0.5, y: 0.75}
+          m_PitchRange: {x: 0.9, y: 1.1}
+          m_VolumeMultiplier: 0.1
+      SwingCamForces:
+        m_RotForce: {x: 0.5, y: 0.6, z: 0.5}
+        m_PosForce: {x: 0, y: 0, z: 0}
+        Distribution: 0
+        JitterForce:
+          xJitter: 1
+          yJitter: 1
+          zJitter: 1
+      HitCamForces:
+        m_RotForce: {x: 0, y: 0, z: 1}
+        m_PosForce: {x: 0, y: 0, z: 1.5}
+        Distribution: 0
+        JitterForce:
+          xJitter: 0.725
+          yJitter: 0.725
+          zJitter: 0.731

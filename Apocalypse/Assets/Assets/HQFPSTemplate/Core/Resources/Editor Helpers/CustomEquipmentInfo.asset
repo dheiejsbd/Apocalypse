@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c51c21b9ab7e4d540bf47117fe984383, type: 3}
+  m_Name: CustomEquipmentInfo
+  m_EditorClassIdentifier: Assembly-CSharp:HQFPSTemplate.Demo:CustomEquipmentObjet
+  m_EquipmentInfo:
+    useCustomCategory: 1
+    equipmentName: Glock17
+    itemCategory: Handgun
+    player: {fileID: 114712738686367542, guid: 20ce86f0ddf7cd1438b1f6d3006b3862, type: 3}
+    baseEquipmentItem: {fileID: 8797196972322091254, guid: 7650a3086f0aca24daebb65b226a96e9,
+      type: 3}
+    equipmentHandlerName: 
+    itemFOV: 48
+    useConditions:
+      UseWhileAirborne: 0
+      UseWhileRunning: 0
+      CanStopReloading: 0

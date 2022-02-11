@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c795b09e3ddb8c5488ac8305c359a22c, type: 3}
+  m_Name: Model_R870
+  m_EditorClassIdentifier: 
+  FovProperty: _FOV
+  TargetFOV: 49.5
+  SkinIDProperty: Skin ID
+  Skins:
+    m_List:
+    - Name: Rusty Metal
+      SharedMesh: {fileID: -3081062086459471659, guid: 718ce03e164b0b542b3ff28241e7b069,
+        type: 3}
+      SharedMaterials:
+      - {fileID: 2100000, guid: c72679bc118bb2c46b1b017675fcaad9, type: 2}
+      - {fileID: 2100000, guid: 19595011daeed05498e660a9682dbb6e, type: 2}
+    - Name: Painted Metal
+      SharedMesh: {fileID: -3081062086459471659, guid: 718ce03e164b0b542b3ff28241e7b069,
+        type: 3}
+      SharedMaterials:
+      - {fileID: 2100000, guid: 2db78b06c217594499af9b373f008060, type: 2}
+      - {fileID: 2100000, guid: 19595011daeed05498e660a9682dbb6e, type: 2}

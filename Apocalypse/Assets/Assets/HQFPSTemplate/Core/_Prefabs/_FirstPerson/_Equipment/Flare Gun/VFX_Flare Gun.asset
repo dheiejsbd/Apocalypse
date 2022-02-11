@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc2e03ac99bab304aa603f2904433dbd, type: 3}
+  m_Name: VFX_Flare Gun
+  m_EditorClassIdentifier: 
+  ParticleEffects:
+    MuzzleFlashPrefab: {fileID: 6168704467846756175, guid: 9fb2efebc7799194f964352e4a5fde8e,
+      type: 3}
+    MuzzleFlashOffset: {x: 0, y: 0, z: 0}
+    MuzzleFlashRandomScale: {x: 0.05, y: 0.06}
+    MuzzleFlashRandomRot: {x: 25, y: 25, z: 25}
+    TracerPrefab: {fileID: 0}
+    TracerOffset: {x: 0, y: 0, z: 0}
+  CasingEjection:
+    CasingPrefab: {fileID: 0}
+    SpawnDelay: 0
+    CasingScale: 0
+    Spin: 0
+    SpawnOffset: {x: 0, y: 0, z: 0}
+    AimSpawnOffset: {x: 0, y: 0, z: 0}
+    SpawnVelocity: {x: 0, y: 0, z: 0}
+  MagazineEjection:
+    MagazinePrefab: {fileID: 0}
+    SpawnDelay: 0
+    MagazineVelocity: {x: 0, y: 0, z: 0}
+    MagazineAngularVelocity: {x: 0, y: 0, z: 0}

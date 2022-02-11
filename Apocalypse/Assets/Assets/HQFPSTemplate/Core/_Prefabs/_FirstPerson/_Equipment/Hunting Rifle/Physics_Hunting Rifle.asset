@@ -1,0 +1,324 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab6b3cbfb62b6914682763866a3ea00a, type: 3}
+  m_Name: Physics_Hunting Rifle
+  m_EditorClassIdentifier: 
+  GeneralSettings:
+    BasePosOffset: {x: -0.01, y: 0.003, z: -0.025}
+    BaseRotOffset: {x: -0.8, y: 0.47, z: -2}
+  Sway:
+    LookInputMultiplier: 1
+    MaxLookInput: 5
+    AimMultiplier: 0.2
+    LookPositionSway: {x: 0.01, y: -0.005, z: 0}
+    LookRotationSway: {x: 0.5, y: 0.5, z: 0.5}
+    StrafePositionSway: {x: 0.45, y: 0.5, z: 0}
+    StrafeRotationSway: {x: 0.5, y: 0.7, z: -1}
+    FallSway: {x: 4, y: -0.5, z: 0}
+  Jump:
+    Enabled: 1
+    PositionForce:
+      Force: {x: 0, y: 0, z: 0}
+      Distribution: 2
+    RotationForce:
+      Force: {x: 2, y: 0, z: 5}
+      Distribution: 4
+  FallImpact:
+    Enabled: 1
+    PositionForce:
+      Force: {x: 0, y: -5, z: 0}
+      Distribution: 1
+    RotationForce:
+      Force: {x: 0.1, y: 0, z: 0.1}
+      Distribution: 1
+  WalkStepForce:
+    Enabled: 1
+    PositionForce:
+      Force: {x: 0, y: -5, z: 0}
+      Distribution: 3
+    RotationForce:
+      Force: {x: 6, y: 0, z: -3}
+      Distribution: 5
+  CrouchStepForce:
+    Enabled: 1
+    PositionForce:
+      Force: {x: 0, y: -2, z: 0}
+      Distribution: 5
+    RotationForce:
+      Force: {x: 6, y: 0, z: -7}
+      Distribution: 3
+  RunStepForce:
+    Enabled: 1
+    PositionForce:
+      Force: {x: 0, y: -30, z: 0}
+      Distribution: 1
+    RotationForce:
+      Force: {x: -16, y: 0, z: 0}
+      Distribution: 1
+  IdleState:
+    SpringSettings:
+      Position:
+        Stiffness: {x: 0.012, y: 0.012, z: 0.012}
+        Damping: {x: 0.28, y: 0.28, z: 0.28}
+      Rotation:
+        Stiffness: {x: 0.015, y: 0.015, z: 0.015}
+        Damping: {x: 0.28, y: 0.28, z: 0.28}
+    EntryOffset:
+      Enabled: 0
+      EntryOffsetDuration: 0
+      LerpToOffsetSpeed: 0
+      Offset:
+        Enabled: 1
+        PositionOffset: {x: 0, y: 0, z: 0}
+        RotationOffset: {x: 0, y: 0, z: 0}
+    Offset:
+      Enabled: 0
+      PositionOffset: {x: 0, y: 0, z: 0}
+      RotationOffset: {x: 0, y: 0, z: 0}
+    Bob:
+      Enabled: 1
+      BobSpeed: 1
+      PositionAmplitude: {x: 0.35, y: 0.5, z: 0}
+      RotationAmplitude: {x: 0.35, y: 0.5, z: 0}
+    Noise:
+      Enabled: 1
+      MaxJitter: 0.1
+      NoiseSpeed: 1.3
+      PosNoiseAmplitude: {x: 0.02, y: 0.04, z: 0.015}
+      RotNoiseAmplitude: {x: 0.08, y: 0.1, z: 0.1}
+    PosEnterForce:
+      Force: {x: 0, y: 0, z: 0}
+      Distribution: 0
+    PosExitForce:
+      Force: {x: 0, y: 0, z: 0}
+      Distribution: 0
+    EnterForce:
+      Force: {x: 0, y: 0, z: 0}
+      Distribution: 0
+    ExitForce:
+      Force: {x: 0, y: 0, z: 0}
+      Distribution: 0
+  WalkState:
+    SpringSettings:
+      Position:
+        Stiffness: {x: 0.012, y: 0.012, z: 0.012}
+        Damping: {x: 0.28, y: 0.28, z: 0.28}
+      Rotation:
+        Stiffness: {x: 0.015, y: 0.015, z: 0.015}
+        Damping: {x: 0.28, y: 0.28, z: 0.28}
+    EntryOffset:
+      Enabled: 0
+      EntryOffsetDuration: 1
+      LerpToOffsetSpeed: 4
+      Offset:
+        Enabled: 1
+        PositionOffset: {x: 0, y: 0, z: 0}
+        RotationOffset: {x: 0, y: 0, z: 0}
+    Offset:
+      Enabled: 0
+      PositionOffset: {x: 0, y: 0, z: 0}
+      RotationOffset: {x: 0, y: 0, z: 0}
+    Bob:
+      Enabled: 1
+      BobSpeed: 1
+      PositionAmplitude: {x: 3, y: -4, z: 0}
+      RotationAmplitude: {x: 5, y: 5, z: -7}
+    Noise:
+      Enabled: 1
+      MaxJitter: 0
+      NoiseSpeed: 1
+      PosNoiseAmplitude: {x: 0.02, y: 0.02, z: 0.02}
+      RotNoiseAmplitude: {x: 0.15, y: 0.15, z: 0.15}
+    PosEnterForce:
+      Force: {x: 0, y: 0, z: 0}
+      Distribution: 0
+    PosExitForce:
+      Force: {x: 0, y: 0, z: 0}
+      Distribution: 0
+    EnterForce:
+      Force: {x: 0, y: 0, z: 0}
+      Distribution: 0
+    ExitForce:
+      Force: {x: 0, y: 0, z: 0}
+      Distribution: 0
+  RunState:
+    SpringSettings:
+      Position:
+        Stiffness: {x: 0.02, y: 0.02, z: 0.02}
+        Damping: {x: 0.37, y: 0.37, z: 0.37}
+      Rotation:
+        Stiffness: {x: 0.02, y: 0.04, z: 0.02}
+        Damping: {x: 0.37, y: 0.37, z: 0.37}
+    EntryOffset:
+      Enabled: 1
+      EntryOffsetDuration: 0.8
+      LerpToOffsetSpeed: 4
+      Offset:
+        Enabled: 1
+        PositionOffset: {x: -2, y: -2, z: -1.5}
+        RotationOffset: {x: 3, y: -5, z: 8}
+    Offset:
+      Enabled: 1
+      PositionOffset: {x: -4, y: -2, z: -5}
+      RotationOffset: {x: 8.63, y: -55, z: 27}
+    Bob:
+      Enabled: 1
+      BobSpeed: 1
+      PositionAmplitude: {x: 25, y: -25, z: 5}
+      RotationAmplitude: {x: 45, y: 60, z: 55}
+    Noise:
+      Enabled: 1
+      MaxJitter: 0
+      NoiseSpeed: 0.9
+      PosNoiseAmplitude: {x: 0.5, y: 0.15, z: 0.15}
+      RotNoiseAmplitude: {x: 0, y: -0.2, z: 1}
+    PosEnterForce:
+      Force: {x: 0, y: 0, z: 0}
+      Distribution: 0
+    PosExitForce:
+      Force: {x: 0.0005, y: 0, z: 0}
+      Distribution: 10
+    EnterForce:
+      Force: {x: -0.5, y: 0, z: 0}
+      Distribution: 7
+    ExitForce:
+      Force: {x: 0.2, y: -1.5, z: 1}
+      Distribution: 12
+  AimState:
+    SpringSettings:
+      Position:
+        Stiffness: {x: 0.04, y: 0.04, z: 0.03}
+        Damping: {x: 0.4, y: 0.4, z: 0.4}
+      Rotation:
+        Stiffness: {x: 0.02, y: 0.01, z: 0.01}
+        Damping: {x: 0.25, y: 0.25, z: 0.25}
+    EntryOffset:
+      Enabled: 0
+      EntryOffsetDuration: 1
+      LerpToOffsetSpeed: 4
+      Offset:
+        Enabled: 1
+        PositionOffset: {x: 0, y: 0, z: 0}
+        RotationOffset: {x: 0, y: 0, z: 0}
+    Offset:
+      Enabled: 1
+      PositionOffset: {x: -15.1, y: 4, z: -11.71}
+      RotationOffset: {x: 0.4, y: 0.87, z: -0.83}
+    Bob:
+      Enabled: 1
+      BobSpeed: 1
+      PositionAmplitude: {x: 0.5, y: 5.5, z: 0}
+      RotationAmplitude: {x: 0.5, y: 1, z: -1.5}
+    Noise:
+      Enabled: 1
+      MaxJitter: 0.1
+      NoiseSpeed: 1
+      PosNoiseAmplitude: {x: 0.005, y: 0.005, z: 0.005}
+      RotNoiseAmplitude: {x: 0.01, y: 0.01, z: 0.01}
+    PosEnterForce:
+      Force: {x: -0.0005, y: 0, z: 0}
+      Distribution: 3
+    PosExitForce:
+      Force: {x: -0.0006, y: -0.0005, z: 0}
+      Distribution: 3
+    EnterForce:
+      Force: {x: 0.3, y: 0.22, z: -0.4}
+      Distribution: 5
+    ExitForce:
+      Force: {x: -0.1, y: -0.3, z: 0.8}
+      Distribution: 5
+  CrouchState:
+    SpringSettings:
+      Position:
+        Stiffness: {x: 0.012, y: 0.012, z: 0.012}
+        Damping: {x: 0.28, y: 0.28, z: 0.28}
+      Rotation:
+        Stiffness: {x: 0.015, y: 0.015, z: 0.015}
+        Damping: {x: 0.28, y: 0.28, z: 0.28}
+    EntryOffset:
+      Enabled: 0
+      EntryOffsetDuration: 1
+      LerpToOffsetSpeed: 4
+      Offset:
+        Enabled: 1
+        PositionOffset: {x: 0, y: 0, z: 0}
+        RotationOffset: {x: 0, y: 0, z: 0}
+    Offset:
+      Enabled: 1
+      PositionOffset: {x: 0, y: -0.7, z: -1}
+      RotationOffset: {x: -2, y: -1.3, z: 3}
+    Bob:
+      Enabled: 1
+      BobSpeed: 1
+      PositionAmplitude: {x: 5, y: -5, z: 0}
+      RotationAmplitude: {x: -5, y: 7, z: 3}
+    Noise:
+      Enabled: 1
+      MaxJitter: 0.1
+      NoiseSpeed: 1.75
+      PosNoiseAmplitude: {x: 0.02, y: 0.02, z: 0.0075}
+      RotNoiseAmplitude: {x: 0.02, y: 0.07, z: 0.05}
+    PosEnterForce:
+      Force: {x: 0, y: 0, z: 0}
+      Distribution: 0
+    PosExitForce:
+      Force: {x: 0, y: 0, z: 0}
+      Distribution: 0
+    EnterForce:
+      Force: {x: -0.3, y: 0.1, z: 0.5}
+      Distribution: 5
+    ExitForce:
+      Force: {x: 0.5, y: 0, z: -0.5}
+      Distribution: 4
+  ProneState:
+    SpringSettings:
+      Position:
+        Stiffness: {x: 0.02, y: 0.019, z: 0.018}
+        Damping: {x: 0.27, y: 0.28, z: 0.29}
+      Rotation:
+        Stiffness: {x: 0.018, y: 0.019, z: 0.02}
+        Damping: {x: 0.29, y: 0.28, z: 0.27}
+    EntryOffset:
+      Enabled: 0
+      EntryOffsetDuration: 1
+      LerpToOffsetSpeed: 4
+      Offset:
+        Enabled: 1
+        PositionOffset: {x: 0, y: 0, z: 0}
+        RotationOffset: {x: 0, y: 0, z: 0}
+    Offset:
+      Enabled: 1
+      PositionOffset: {x: -2.22, y: -1.17, z: -1.74}
+      RotationOffset: {x: -0.76, y: 0, z: 6.44}
+    Bob:
+      Enabled: 1
+      BobSpeed: 1
+      PositionAmplitude: {x: 3, y: -5, z: 0}
+      RotationAmplitude: {x: -5, y: 5, z: 3}
+    Noise:
+      Enabled: 1
+      MaxJitter: 0
+      NoiseSpeed: 0.6
+      PosNoiseAmplitude: {x: 0.07, y: 0.07, z: 0.1}
+      RotNoiseAmplitude: {x: 0.1, y: 0.15, z: 0.15}
+    PosEnterForce:
+      Force: {x: 0, y: -0.002, z: 0}
+      Distribution: 2
+    PosExitForce:
+      Force: {x: 0, y: -0.002, z: -0.002}
+      Distribution: 2
+    EnterForce:
+      Force: {x: -0.5, y: 0, z: -0.25}
+      Distribution: 2
+    ExitForce:
+      Force: {x: 0.5, y: 0, z: 0.25}
+      Distribution: 2

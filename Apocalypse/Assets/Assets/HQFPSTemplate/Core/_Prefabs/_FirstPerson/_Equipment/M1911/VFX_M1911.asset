@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc2e03ac99bab304aa603f2904433dbd, type: 3}
+  m_Name: VFX_M1911
+  m_EditorClassIdentifier: 
+  ParticleEffects:
+    MuzzleFlashPrefab: {fileID: 1611179162520996753, guid: ad026f0e9dac3a9418cf7e8e4651d0c1,
+      type: 3}
+    MuzzleFlashOffset: {x: 0, y: 0.01, z: -0.005}
+    MuzzleFlashRandomScale: {x: 0.05, y: 0.08}
+    MuzzleFlashRandomRot: {x: 50, y: 50, z: 50}
+    TracerPrefab: {fileID: 1735467526708890, guid: 81e64d37cd6bc6644a169e1c1d4b12b8,
+      type: 3}
+    TracerOffset: {x: 0, y: -0.15, z: -0.15}
+  CasingEjection:
+    CasingPrefab: {fileID: 4984340598819202543, guid: abec018fb66d8384f81a73564dc46471,
+      type: 3}
+    SpawnDelay: 0.065
+    CasingScale: 0.6
+    Spin: 2
+    SpawnOffset: {x: 0.15, y: -0.05, z: -0.03}
+    AimSpawnOffset: {x: 0, y: 0, z: 0}
+    SpawnVelocity: {x: 1.2, y: 1.6, z: -0.4}
+  MagazineEjection:
+    MagazinePrefab: {fileID: 1093248112760625095, guid: 2d6aa41398a0a204ea5eff4bc955f416,
+      type: 3}
+    SpawnDelay: 0.65
+    MagazineVelocity: {x: 1, y: -1, z: 1}
+    MagazineAngularVelocity: {x: -1, y: 1, z: -1}

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98778c608fa55d048949f51cc3b54ffa, type: 3}
+  m_Name: Crosshair 03
+  m_EditorClassIdentifier: 
+  GraphicsInfo:
+    NormalColor: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 0.84313726}
+    OnEntityColor: {r: 0.8584906, g: 0, b: 0, a: 0.84313726}
+    UnusableColor: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 0.2627451}
+    ShowWhenAiming: 0
+    PivotRotation: 0
+    LeftSprite:
+      Sprite: {fileID: 0}
+      Size: {x: 8, y: 2}
+    RightSprite:
+      Sprite: {fileID: 0}
+      Size: {x: 8, y: 2}
+    CenterSprite:
+      Sprite: {fileID: 21300000, guid: 2bfbe2911fde5924487069f1915eb5c7, type: 3}
+      Size: {x: 20, y: 20}
+    TopSprite:
+      Sprite: {fileID: 0}
+      Size: {x: 2, y: 8}
+    BottomSprite:
+      Sprite: {fileID: 0}
+      Size: {x: 2, y: 8}
+  ScaleInfo:
+    ScaleSpringData:
+      Stiffness: {x: 0.01, y: 0.01}
+      Damping: {x: 0.2, y: 0.2}
+    ItemUseScaleForce:
+      Force: {x: 2.5, y: 2.5}
+      Distribution: 1
+    ScaleMultiplier: 2
+    IdleScale: 0.33333334
+    CrouchScale: 0.25
+    ProneScale: 0.23333333
+    WalkScale: 0.5
+    RunScale: 0.6666667
+    AirborneMultiplier: 3
+    AimScaleMultiplier: 0.5

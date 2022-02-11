@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21498f0499b96d446b6b5cfc7cab8b7e, type: 3}
+  m_Name: Info_Old Fire Axe
+  m_EditorClassIdentifier: 
+  General:
+    UseWhileAirborne: 0
+    UseWhileRunning: 0
+    CanStopReloading: 0
+    CrosshairID: 0
+    StaminaTakePerUse: 15
+    MovementSpeedMod: 0.97
+  Equipping:
+    Duration: 0.65
+    AnimationSpeed: 1
+    Audio:
+    - Delay: 0.075
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 5935f21e564c6984485383b5ff10402f, type: 3}
+          - {fileID: 8300000, guid: 5b1f9678bc3929d42b41b10ee277742c, type: 3}
+        m_VolumeRange: {x: 0.25, y: 0.3}
+        m_PitchRange: {x: 0.95, y: 1.05}
+        m_VolumeMultiplier: 1
+    CameraForces:
+    - Delay: 0.25
+      Force:
+        Force: {x: -0.8, y: 0.5, z: -0.9}
+        Distribution: 8
+  Unequipping:
+    Duration: 0.55
+    AnimationSpeed: 1.4
+    Audio:
+    - Delay: 0
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 3013c91cb1efa464988c9407abaf9cd8, type: 3}
+        m_VolumeRange: {x: 0.9, y: 1}
+        m_PitchRange: {x: 0.9, y: 1}
+        m_VolumeMultiplier: 0.22
+    CameraForces:
+    - Delay: 0.1
+      Force:
+        Force: {x: 0.75, y: -0.3, z: 0.7}
+        Distribution: 6
+  Aiming:
+    Enabled: 0
+    AimThreshold: 0
+    AimCamHeadbobMod: 1
+    AimMovementSpeedMod: 0
+    AimWhileAirborne: 0
+    UseAimBlur: 0
+    AimSounds:
+      m_Clips:
+        m_List: []
+      m_VolumeRange: {x: 0.5, y: 0.75}
+      m_PitchRange: {x: 0.9, y: 1.1}
+      m_VolumeMultiplier: 1
+  MeleeSettings:
+    HitMask:
+      serializedVersion: 2
+      m_Bits: 5121
+    MaxHitDistance: 1.15
+    ImpactEffect: 4
+    DamageType: 2
+    CanContinuouslyAttack: 0
+    ResetSwingsIfNotUsed: 0
+    ResetSwingsDelay: 1
+    SwingSelection: 0
+    Swings:
+    - SwingName: Strong Attack
+      Cooldown: 0.9
+      CastDelay: 0.4
+      CastRadius: 0.3
+      HitDamage: 45
+      HitImpact: 50
+      AnimationIndex: 0
+      AnimationSpeed: 1.35
+      SwingAudio:
+        Delay: 0.2
+        Sound:
+          m_Clips:
+            m_List:
+            - {fileID: 8300000, guid: 674fd2f03c8ed5045b212ea20a13e3a0, type: 3}
+            - {fileID: 8300000, guid: 24d3d38c05d97e841954876e7453a41c, type: 3}
+          m_VolumeRange: {x: 0.5, y: 0.75}
+          m_PitchRange: {x: 0.8, y: 1}
+          m_VolumeMultiplier: 1
+      HitAudio:
+        Delay: 0
+        Sound:
+          m_Clips:
+            m_List:
+            - {fileID: 8300000, guid: 34dd98ebbe2a34746a4b2cf9c3cbfa8e, type: 3}
+          m_VolumeRange: {x: 0.5, y: 0.75}
+          m_PitchRange: {x: 0.9, y: 1.1}
+          m_VolumeMultiplier: 0.185
+      SwingCamForces:
+        m_RotForce: {x: 0, y: 1, z: 0.6}
+        m_PosForce: {x: -3, y: 1, z: -3}
+        Distribution: 1
+        JitterForce:
+          xJitter: 0.511
+          yJitter: 0.536
+          zJitter: 0.511
+      HitCamForces:
+        m_RotForce: {x: 1.5, y: 2, z: 0}
+        m_PosForce: {x: 0, y: 2, z: 0}
+        Distribution: 5
+        JitterForce:
+          xJitter: 0.688
+          yJitter: 0.688
+          zJitter: 0.701

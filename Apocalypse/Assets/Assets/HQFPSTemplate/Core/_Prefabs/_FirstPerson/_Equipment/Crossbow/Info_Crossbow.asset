@@ -1,0 +1,256 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd3ca5f0caebe26479ec071cf48194b7, type: 3}
+  m_Name: Info_Crossbow
+  m_EditorClassIdentifier: 
+  General:
+    UseWhileAirborne: 0
+    UseWhileRunning: 0
+    CanStopReloading: 0
+    CrosshairID: 3
+    StaminaTakePerUse: 0
+    MovementSpeedMod: 0.95
+  Equipping:
+    Duration: 0.75
+    AnimationSpeed: 1.3
+    Audio:
+    - Delay: 0.15
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 1a4714ae63ff3d048baa6899eea700d9, type: 3}
+        m_VolumeRange: {x: 0.3, y: 0.35}
+        m_PitchRange: {x: 0.9, y: 1.1}
+        m_VolumeMultiplier: 1
+    CameraForces:
+    - Delay: 0.2
+      Force:
+        Force: {x: 0.8, y: -0.15, z: -0.6}
+        Distribution: 6
+  Unequipping:
+    Duration: 0.6
+    AnimationSpeed: 1.05
+    Audio:
+    - Delay: 0
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 0449fbe5d1232f8488e573b5e380189f, type: 3}
+        m_VolumeRange: {x: 0.9, y: 1}
+        m_PitchRange: {x: 0.9, y: 1.1}
+        m_VolumeMultiplier: 0.2
+    CameraForces:
+    - Delay: 0.1
+      Force:
+        Force: {x: 0.55, y: -0.3, z: 0.7}
+        Distribution: 6
+  Aiming:
+    Enabled: 1
+    AimThreshold: 0.3
+    AimCamHeadbobMod: 1
+    AimMovementSpeedMod: 1
+    AimWhileAirborne: 0
+    UseAimBlur: 1
+    AimSounds:
+      m_Clips:
+        m_List:
+        - {fileID: 8300000, guid: 8621119ba0e1106459419de5ac7e7122, type: 3}
+        - {fileID: 8300000, guid: fa598a1541b963e4b9ffe3fe54cd9ab3, type: 3}
+      m_VolumeRange: {x: 0.5, y: 0.75}
+      m_PitchRange: {x: 0.9, y: 1.1}
+      m_VolumeMultiplier: 0.35
+  Shooting:
+    EnableAmmo: 1
+    MagazineSize: 1
+    Modes: 2
+    FireRateOverTime:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    FireDuration: 0.22
+    BurstLength: 3
+    BurstDuration: 0.3
+    BurstPause: 0.35
+    RoundsPerMinute: 450
+    HasDryFireAnim: 0
+    HasAlternativeFireAnim: 0
+    FireAnimationSpeed: 1
+    ShootAudio:
+      m_Clips:
+        m_List:
+        - {fileID: 8300000, guid: fbadec947beb1424e9916a622c88a676, type: 3}
+        - {fileID: 8300000, guid: 914bf3723115dbb4a936c747b3faf3a2, type: 3}
+      m_VolumeRange: {x: 0.5, y: 0.75}
+      m_PitchRange: {x: 0.9, y: 1.1}
+      m_VolumeMultiplier: 0.6
+    ShootTailAudio:
+      m_Clips:
+        m_List: []
+      m_VolumeRange: {x: 0.5, y: 0.75}
+      m_PitchRange: {x: 0.9, y: 1.1}
+      m_VolumeMultiplier: 1
+    DryShootAudio:
+      m_Clips:
+        m_List: []
+      m_VolumeRange: {x: 0.5, y: 0.75}
+      m_PitchRange: {x: 0.9, y: 1.1}
+      m_VolumeMultiplier: 0.2
+    FireModeChangeAudio:
+      Delay: 0
+      Sound:
+        m_Clips:
+          m_List: []
+        m_VolumeRange: {x: 0.5, y: 0.75}
+        m_PitchRange: {x: 0.9, y: 1.1}
+        m_VolumeMultiplier: 1
+    HandlingAudio: []
+    CasingDropAudio: []
+    HandlingCamForces: []
+  Reloading:
+    ReloadType: 0
+    ReloadStartDuration: 0
+    ReloadDuration: 2.4
+    ReloadEndDuration: 0
+    HasEmptyReload: 0
+    EmptyReloadDuration: 0
+    ProgressiveEmptyReload: 0
+    ReloadAnimationSpeed: 1.35
+    EmptyReloadAnimationSpeed: 0
+    ReloadSounds:
+    - Delay: 0
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 5935f21e564c6984485383b5ff10402f, type: 3}
+        m_VolumeRange: {x: 0.75, y: 1}
+        m_PitchRange: {x: 0.9, y: 1.1}
+        m_VolumeMultiplier: 1
+    - Delay: 0.2
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 15e087e0b561f3642a8385a5c402d7f7, type: 3}
+          - {fileID: 8300000, guid: 0f41318b1e893774bb0c539a254dd39e, type: 3}
+          - {fileID: 8300000, guid: 7e00d11b5ad861f4a90639cb2363c56b, type: 3}
+        m_VolumeRange: {x: 0.75, y: 1}
+        m_PitchRange: {x: 0.9, y: 1.1}
+        m_VolumeMultiplier: 0.15
+    - Delay: 0.3
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 0f41318b1e893774bb0c539a254dd39e, type: 3}
+          - {fileID: 8300000, guid: 7e00d11b5ad861f4a90639cb2363c56b, type: 3}
+          - {fileID: 8300000, guid: 15e087e0b561f3642a8385a5c402d7f7, type: 3}
+        m_VolumeRange: {x: 0.75, y: 1}
+        m_PitchRange: {x: 0.9, y: 1.1}
+        m_VolumeMultiplier: 0.25
+    - Delay: 0.4
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 0f41318b1e893774bb0c539a254dd39e, type: 3}
+          - {fileID: 8300000, guid: 7e00d11b5ad861f4a90639cb2363c56b, type: 3}
+          - {fileID: 8300000, guid: 15e087e0b561f3642a8385a5c402d7f7, type: 3}
+        m_VolumeRange: {x: 0.75, y: 1}
+        m_PitchRange: {x: 0.9, y: 1.1}
+        m_VolumeMultiplier: 0.35
+    - Delay: 0.9
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 945a7f7de1faa1f4e9bfba3bac36f9d3, type: 3}
+        m_VolumeRange: {x: 0.75, y: 1}
+        m_PitchRange: {x: 0.9, y: 1.1}
+        m_VolumeMultiplier: 0.2
+    - Delay: 1.1
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 1a4714ae63ff3d048baa6899eea700d9, type: 3}
+        m_VolumeRange: {x: 0.75, y: 1}
+        m_PitchRange: {x: 0.9, y: 1.1}
+        m_VolumeMultiplier: 0.2
+    - Delay: 1.5
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 1a4714ae63ff3d048baa6899eea700d9, type: 3}
+        m_VolumeRange: {x: 0.75, y: 1}
+        m_PitchRange: {x: 0.9, y: 1.1}
+        m_VolumeMultiplier: 0.4
+    - Delay: 1.9
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: 34f3b24b0f7b70d42b972bd402f6e407, type: 3}
+        m_VolumeRange: {x: 0.3, y: 0.4}
+        m_PitchRange: {x: 1, y: 1}
+        m_VolumeMultiplier: 0.3
+    - Delay: 1.85
+      Sound:
+        m_Clips:
+          m_List:
+          - {fileID: 8300000, guid: fe6cdb7f31a658f4a8f0a5fc5da73343, type: 3}
+        m_VolumeRange: {x: 0.3, y: 0.4}
+        m_PitchRange: {x: 0.9, y: 1.1}
+        m_VolumeMultiplier: 1
+    ReloadStartSounds: []
+    ReloadEndSounds: []
+    EmptyReloadSounds: []
+    ReloadLoopCamForces:
+    - Delay: 0.2
+      Force:
+        Force: {x: 1, y: 0, z: 0}
+        Distribution: 20
+    - Delay: 1
+      Force:
+        Force: {x: -0.5, y: 0, z: -0.5}
+        Distribution: 5
+    - Delay: 1.5
+      Force:
+        Force: {x: -0.5, y: 0, z: 0}
+        Distribution: 5
+    - Delay: 1.9
+      Force:
+        Force: {x: 0.7, y: 0, z: 0.7}
+        Distribution: 3
+    ReloadStartCamForces: []
+    ReloadEndCamForces: []
+    EmptyReloadLoopCamForces: []
+  Launching:
+    Prefab: {fileID: 114306736182815076, guid: 0f54f263a59cd3d489a8bb7c3a8c89ea, type: 3}
+    SpawnOffset: {x: 0, y: -0.01, z: 1}
+    AngularVelocity: {x: 0, y: 15, z: 0}
+    LaunchSpread: 1
+    LaunchSpeed: 45
+    LaunchDelay: 0.12
